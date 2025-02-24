@@ -41,7 +41,7 @@ const ContactForm = () => {
     <Container
       style={{
         backgroundColor: 'white',
-        border: '2px solid #ff7823',
+        border: '1px solid gray',
         borderRadius: '8px',
         padding: '2rem',
         maxWidth: '600px'
