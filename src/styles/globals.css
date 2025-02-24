@@ -12,6 +12,14 @@
     transform: scale(1.05);
   }
 
-  html, body {
-    scrollbar-gutter: stable both-edges;
- }
+  
+html, body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
