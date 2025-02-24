@@ -12,6 +12,6 @@
     transform: scale(1.05);
   }
 
-  .element-class {
+  html, body {
     scrollbar-gutter: stable both-edges;
  }
