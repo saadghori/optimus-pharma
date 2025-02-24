@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero';
 import ImageTextSection from '@/components/ImageTextSection';
 import FeatureCards from '@/components/FeatureCards';
+import CTABanner from '@/components/CTABanner';
 import styles from '@/styles/About.module.css';
 
 const features = [
@@ -39,7 +40,7 @@ const About = () => {
         imageAlt="Happy person"
         heading="Our Passion. Your Health."
         text="Optimus Pharma is dedicated to providing pharmaceutical solutions that make a lasting impact."
-        buttonText="Our Leadership"
+        buttonText="OUR LEADERSHIP"
         overlayOpacity={0.45}
         buttonLink="/leadership"
       />
@@ -67,6 +68,7 @@ const About = () => {
         </h2>
         <FeatureCards features={features} />
       </div>
+      <CTABanner />
     </div>
   );
 };

@@ -4,6 +4,7 @@ import FeatureCards from '../components/FeatureCards';
 import ImageTextSection from "../components/ImageTextSection";
 import CTABanner from '@/components/CTABanner';
 import Hero from '@/components/Hero';
+import StatsSection from '@/components/StatsSection';
 
 const Home = () => {
   const features = [
@@ -41,7 +42,7 @@ const Home = () => {
         imageAlt="Eye care background"
         heading="Innovative Solutions in Eye Care"
         text="Delivering advanced pharmaceutical products to improve vision and enhance lives."
-        buttonText="Get in Touch"
+        buttonText="SCHEDULE A MEETING"
         overlayOpacity={0.15}
       />
 
@@ -110,6 +111,7 @@ const Home = () => {
           text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
         />
         </div>
+        <StatsSection/>
         <CTABanner />
     </div>
   );

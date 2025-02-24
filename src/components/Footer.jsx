@@ -45,7 +45,7 @@ export default function Footer() {
           <Col md={4}>
             <h4 className={styles.heading} >Head Office</h4>
             <div className={styles.headOffice}>
-                <p>Optimus Pharma</p>
+                <p>Optimus Pharma Pvt. (Ltd.)</p>
                 <p>259 F/I-Block, Wapda Town, Lahore</p>
                 <p>Cell: +92 321 5182261</p>
                 <p>Tel: +92 42 35186994</p>

@@ -1,4 +1,26 @@
 
+.btn-custom {
+  background-color: white;
+  border-color: white;
+  border: 0.2rem solid white;
+  color: #3b3b3b;
+  padding: 0.75rem 1.25rem;
+  font-size: 0.8rem;
+  font-weight: 620;
+  border-radius: 4px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 100px;
+}
+
+.btn-custom:hover,
+.btn-custom:focus {
+    background-color: #ff7823 !important;
+    border-color: #ff7823 !important;
+    color: white !important;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15) !important;
+}
+
+
 .img-partner {
     filter: grayscale(50%);
     opacity: 0.8;

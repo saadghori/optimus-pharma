@@ -112,12 +112,23 @@ const ContactForm = () => {
         </Form.Group>
 
         <div style={{ textAlign: 'center' }}>
-            <Button
-                variant="warning"
-                type="submit"
-                style={{ backgroundColor: '#ff7823', borderColor: '#ff7823', color: 'white' }}
-            >
-                Send Message
+        <Button
+            variant="warning"
+            type="submit"
+            style={{
+              backgroundColor: '#ff7823',
+              borderColor: '#ff7823',
+              border: '0.2rem solid #ff7823',
+              color: 'white',
+              padding: '0.75rem 1.25rem',
+              fontSize: '0.8rem',
+              fontWeight: 620,
+              borderRadius: '4px',
+              boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
+              minWidth: '100px'
+            }}
+          >
+              Send Message
             </Button>
 </div>
       </Form>

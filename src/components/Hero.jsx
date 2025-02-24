@@ -48,13 +48,7 @@ const Hero = ({ imageSrc, imageAlt, heading, text, buttonText, overlayOpacity = 
             <Button 
               variant="primary" 
               size="lg"
-              style={{ 
-                backgroundColor: '#ff7823',
-                borderColor: '#ff7823',
-                padding: '0.75rem 1.25rem',
-                fontSize: '1.0rem',
-                
-              }}
+              className='btn-custom'
             >
               {buttonText}
             </Button>

@@ -29,16 +29,11 @@ const CTABanner = () => {
           <h2 className="display-6 mb-4 fw-bold">Ready to work with us?</h2>
           <Link href="/contact" passHref>
             <Button 
-              variant="primary" 
-              size="lg"
-              style={{ 
-                backgroundColor: '#ff7823',
-                borderColor: '#ff7823',
-                padding: '0.75rem 1.25rem',
-                fontSize: '1.0rem'
-              }}
+               variant="primary" 
+               size="lg"
+              className='btn-custom'
             >
-              Send a Message
+              SEND A MESSAGE
             </Button>
           </Link>
         </div>
