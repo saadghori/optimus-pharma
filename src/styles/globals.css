@@ -11,3 +11,7 @@
     opacity: 1 !important;
     transform: scale(1.05);
   }
+
+  .element-class {
+    scrollbar-gutter: stable both-edges;
+ }
