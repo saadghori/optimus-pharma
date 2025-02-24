@@ -12,6 +12,10 @@
     color: #ff7823 !important;
     font-size: 1.05rem !important;
     margin-bottom: 0.75rem !important;
+    min-height: 2rem; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
   
   .featureText {

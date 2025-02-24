@@ -26,7 +26,7 @@ const CTABanner = () => {
       {/* Content */}
       <Container className="position-relative h-100 d-flex align-items-center" style={{ zIndex: 2 }}>
         <div className="text-white" style={{ maxWidth: '600px' }}>
-          <h2 className="display-6 mb-4 fw-bold">Ready to partner with us?</h2>
+          <h2 className="display-6 mb-4 fw-bold">Ready to work with us?</h2>
           <Link href="/contact" passHref>
             <Button 
               variant="primary" 
@@ -35,7 +35,7 @@ const CTABanner = () => {
                 backgroundColor: '#ff7823',
                 borderColor: '#ff7823',
                 padding: '0.75rem 1.25rem',
-                fontSize: '1.1rem'
+                fontSize: '1.0rem'
               }}
             >
               Send a Message

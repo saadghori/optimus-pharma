@@ -1,9 +1,9 @@
-import { Button, Container, Stack, Row, Col } from 'react-bootstrap';
-import Link from 'next/link';
+import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'next/image';
 import FeatureCards from '../components/FeatureCards';
 import ImageTextSection from "../components/ImageTextSection";
 import CTABanner from '@/components/CTABanner';
+import Hero from '@/components/Hero';
 
 const Home = () => {
   const features = [
@@ -36,74 +36,20 @@ const Home = () => {
   return (
     <div>
       {/* Hero Section */}
-      <div style={{ 
-        position: 'relative',
-        width: '100%',
-        height: '100vh'
-      }}>
-        <Image
-          src="/hero-image.jpg"
-          alt="Eye care background"
-          fill
-          priority
-          quality={80}
-          style={{
-            objectFit: 'cover',
-            zIndex: 0
-          }}
-        />
-
-        {/* Dark Overlay */}
-        <div style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          right: 0,
-          bottom: 0,
-          backgroundColor: 'rgba(0, 0, 0, 0.15)',
-          zIndex: 1
-        }} />
-
-        {/* Hero Content */}
-        <Container style={{
-          position: 'relative',
-          zIndex: 2,
-          height: '100%',
-          color: 'white'
-        }}>
-          <Stack 
-            gap={3} 
-            className="h-100 justify-content-center align-items-center text-center"
-          >
-            <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold' }}>
-              Innovative Solutions in Eye Care
-            </h1>
-            <p style={{ fontSize: '1.75rem', maxWidth: '600px' }}>
-              Delivering advanced pharmaceutical products to improve vision and enhance lives.
-            </p>
-            <Link href="/contact" passHref>
-              <Button 
-                variant="primary" 
-                size="lg"
-                style={{ 
-                  backgroundColor: '#ff7823',
-                  borderColor: '#ff7823',
-                  padding: '0.75rem 1.25rem',
-                  fontSize: '1.1rem'
-                }}
-              >
-                Get in Touch
-              </Button>
-            </Link>
-          </Stack>
-        </Container>
-      </div>
+      <Hero 
+        imageSrc="/hero-image.jpg"
+        imageAlt="Eye care background"
+        heading="Innovative Solutions in Eye Care"
+        text="Delivering advanced pharmaceutical products to improve vision and enhance lives."
+        buttonText="Get in Touch"
+        overlayOpacity={0.15}
+      />
 
       {/* Features Section - Now appears below hero */}
       <FeatureCards features={features} />
 
       {/* Partners Section */}
-      <Container className="my-5">
+      <Container className="my-4">
         <h2 className="text-center mb-4" style={{ color: '#ff7823' }}>
           Our Partners
         </h2>
