@@ -1,0 +1,20 @@
+/* styles/FeatureCards.module.css */
+.featureCard {
+    border-radius: 12px;
+    transition: transform 0.3s ease;
+  }
+  
+  .featureCard:hover {
+    transform: translateY(-5px);
+  }
+  
+  .featureTitle {
+    color: #ff7823 !important;
+    font-size: 1.05rem !important;
+    margin-bottom: 0.75rem !important;
+  }
+  
+  .featureText {
+    font-size: 0.85rem;
+    line-height: 1.5;
+  }

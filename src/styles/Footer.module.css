@@ -1,0 +1,41 @@
+/* styles/Footer.module.css */
+
+  .footer {
+    background-color: rgb(241, 240, 240);
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+  }
+
+  .heading {
+    color: #ff7823 !important;
+    margin-left: 0;
+    padding-left: 0;
+    margin-bottom: 1.00rem !important; 
+    font-size: 1.25rem;
+}
+  
+  .navLink {
+    color:black !important;
+    padding: 0.1rem 0 !important;
+    margin-bottom: 0.5rem !important;
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+
+  .navLink:hover {
+    color: #ff7823 !important;
+  }
+
+  .headOffice p {
+    margin-bottom: 0.5rem;
+    line-height: 1.4;
+    font-size: 0.85rem;
+    color: black;
+  }
+
+  .slogan {
+    font-style: italic;
+    color: black;
+    font-size: 0.85rem;
+    max-width: 300px;
+  }

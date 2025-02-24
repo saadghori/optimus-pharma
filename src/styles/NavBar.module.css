@@ -1,0 +1,21 @@
+/* styles/NavBar.module.css */
+
+  .inactiveLink {
+    color: black;
+    font-size: 0.89rem; 
+    font-weight: 400;
+    transition: color 0.3s ease;
+  }
+  
+  .inactiveLink:hover {
+    color: rgb(255, 120, 23);
+  }
+  
+  .activeLink {
+    color: rgb(255, 120, 23) !important;
+    font-size: 0.89rem; 
+    font-weight: 700;
+  }
+  
+  
+  
