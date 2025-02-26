@@ -18,8 +18,8 @@ export default function LeaderProfile({
             <Image
               src={imageSrc}
               alt={name}
-              width={375}
-              height={375}
+              width={325}
+              height={325}
               className={styles.roundImage}
             />
           </div>
