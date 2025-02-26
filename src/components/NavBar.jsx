@@ -99,7 +99,7 @@ export default function NavBar() {
             <Link href="/contact" passHref legacyBehavior>
               <Nav.Link
                 onClick={() => setExpanded(false)}
-                className={`${router.pathname === '/contact' ? styles.activeLink : styles.inactiveLink} mx-2 mb-2`}
+                className={`${styles.contactButton} mx-2 mb-2`}
                 aria-current={router.pathname === '/contact' ? 'page' : undefined}
               >
                 CONTACT US

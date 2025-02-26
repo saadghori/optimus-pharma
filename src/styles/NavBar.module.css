@@ -1,21 +1,53 @@
-/* styles/NavBar.module.css */
+.inactiveLink {
+  color: rgb(52, 51, 51);
+  font-size: 0.93rem;
+  font-weight: 450;
+  transition: color 0.3s ease;
+}
 
-  .inactiveLink {
-    color: rgb(52, 51, 51);
-    font-size: 0.93rem; 
-    font-weight: 450;
-    transition: color 0.3s ease;
+.inactiveLink:hover {
+  color: rgb(255, 120, 23);
+}
+
+.activeLink {
+  color: rgb(255, 120, 23) !important;
+  font-size: 0.935rem;
+  font-weight: 700;
+}
+
+/* Contact button default (mobile) style: revert to old link style on smaller screens */
+.contactButton {
+  color: rgb(52, 51, 51) !important;
+  font-size: 0.93rem;
+  font-weight: 450;
+  background: none;
+  border-radius: 0;
+  padding: 0;
+  transition: color 0.3s ease;
+}
+
+.contactButton:hover {
+  color: rgb(255, 120, 23) !important;
+}
+
+/* For large screens (lg = 992px and up), apply the pill button style */
+@media (min-width: 992px) {
+  .contactButton {
+    background-color: #ff7823;
+    color: #fff !important;
+    border-radius: 4px; 
+    padding: 0.5rem 2rem;
+    display: inline-block;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    font-size: 0.85rem; 
+    font-weight: 600;   
+    min-width: 150px;
   }
-  
-  .inactiveLink:hover {
-    color: rgb(255, 120, 23);
+
+  .contactButton:hover {
+    color: white !important;
+    text-decoration: none;
+    background-color: rgba(255, 120, 35, 0.85);
   }
-  
-  .activeLink {
-    color: rgb(255, 120, 23) !important;
-    font-size: 0.935rem; 
-    font-weight: 700;
-  }
-  
-  
-  
+}
