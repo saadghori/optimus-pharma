@@ -1,9 +1,13 @@
+import Head from 'next/head';
 import { Container } from 'react-bootstrap';
 import LeaderProfile from '@/components/LeaderProfile';
 
 export default function Leadership() {
   return (
     <Container className="py-5 px-4" style={{ backgroundColor: "white" }}>
+        <Head>
+            <title>Leadership - Optimus Pharma</title>
+        </Head>
       {/* Page Title */}
       <h1
         style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.15rem" }}

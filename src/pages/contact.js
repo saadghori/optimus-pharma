@@ -1,8 +1,13 @@
+import Head from "next/head";
 import ContactForm from "@/components/ContactForm";
 import { Container, Row, Col } from "react-bootstrap";
 
 export default function Contact() {
   return (
+    <>
+      <Head>
+        <title>Contact - Optimus Pharma</title>
+      </Head>
     <Container className="py-5 px-4" style={{ backgroundColor: "white" }}>
       {/* Page Title */}
       <h1 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.15rem" }} className="mb-3">
@@ -56,5 +61,6 @@ export default function Contact() {
         </Col>
       </Row>
     </Container>
+    </>
   );
 }

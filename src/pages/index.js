@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Container, Row, Col } from 'react-bootstrap';
 import Image from 'next/image';
 import FeatureCards from '../components/FeatureCards';
@@ -45,6 +46,10 @@ const Home = () => {
 
   return (
     <div>
+      <Head>
+        <title>Optimus Pharma - Innovative Eye Care Solutions</title>
+      </Head>
+
       {/* Hero Section */}
       <Hero
         imageSrc="/hero-image.jpg"

@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import Hero from '@/components/Hero';
 import ImageTextSection from '@/components/ImageTextSection';
 import FeatureCards from '@/components/FeatureCards';
@@ -35,6 +36,9 @@ const features = [
 const About = () => {
   return (
     <div>
+      <Head>
+        <title>About - Optimus Pharma</title>
+      </Head>
       {/* Hero Section */}
       <Hero
         imageSrc="/happyguy.jpg"

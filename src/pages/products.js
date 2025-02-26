@@ -1,3 +1,4 @@
+import Head from 'next/head';
 import { Container } from 'react-bootstrap';
 import CardGrid from '@/components/CardGrid';
 import CTABanner from '@/components/CTABanner';
@@ -74,6 +75,9 @@ export default function Products() {
 
   return (
     <>
+      <Head>
+        <title>Products - Optimus Pharma</title>
+      </Head>
       <Container className="py-5 px-4" style={{ backgroundColor: "white" }}>
         {/* Page Title */}
         <h1
