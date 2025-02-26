@@ -1,0 +1,35 @@
+.leaderProfile {
+    margin: 3rem 0; /* Adjust spacing around each leader section */
+  }
+  
+  .roundImage {
+    border-radius: 50%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.3s ease; /* Added for smooth scaling */
+  }
+  
+  .roundImage:hover {
+    transform: scale(1.03); /* Scales the image to 110% on hover */
+  }
+  
+  .designation {
+    color: #ff7823;
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+  }
+  
+  .heading {
+    color: #ff7823;
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+  }
+  
+  .text {
+    color: #333;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    max-width: 500px;
+  }

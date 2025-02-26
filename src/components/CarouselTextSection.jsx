@@ -19,7 +19,7 @@ export default function CarouselTextSection({ images, heading, text, linkUrl, li
 
         {/* Right Column: Carousel */}
         <Col md={6} className={styles.carouselCol}>
-          <Carousel className={styles.customCarousel} controls indicators={false} fade>
+          <Carousel interval={5000} className={styles.customCarousel} controls indicators={false} fade>
             {images.map((imgSrc, index) => (
               <Carousel.Item key={index}>
                 <img className="d-block w-100" src={imgSrc} alt={`Slide ${index + 1}`} />

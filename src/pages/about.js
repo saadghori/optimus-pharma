@@ -1,6 +1,7 @@
 import Hero from '@/components/Hero';
 import ImageTextSection from '@/components/ImageTextSection';
 import FeatureCards from '@/components/FeatureCards';
+import CarouselTextSection from '@/components/CarouselTextSection';
 import CTABanner from '@/components/CTABanner';
 import styles from '@/styles/About.module.css';
 
@@ -68,6 +69,19 @@ const About = () => {
         </h2>
         <FeatureCards features={features} />
       </div>
+
+      {/* New CarouselTextSection */}
+      <div className={styles.carouselTextSection}>
+        <CarouselTextSection
+          images={['/lab1.jpg', '/lab2.jpg', '/machinery1.jpg', '/machinery2.jpg']}
+          heading="World-Class Facilities for Unmatched Innovation"
+          text="Our advanced laboratories and cutting-edge machinery empower breakthrough pharmaceutical research and development. Equipped with the latest technology, our facilities ensure precision, efficiency, and quality at every stage of production."
+          linkUrl="/contact"
+          linkText="Schedule a tour>"
+        />
+      </div>
+
+      {/* Call to Action Banner */}
       <CTABanner />
     </div>
   );

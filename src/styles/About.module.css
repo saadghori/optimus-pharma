@@ -21,3 +21,15 @@
     padding: 60px 10px;
     background-color: #fff;
   }
+
+  .carouselTextSection {
+    margin-top: 10px; /* Reduce top margin */
+    margin-bottom: 140px; /* Increase bottom margin */
+  }
+
+  @media (max-width: 768px) { 
+    .carouselTextSection {
+      margin-top: -125px; /* Further reduce top margin for smaller screens */
+      margin-bottom: 100px; /* Slightly reduce bottom margin for better spacing */
+    }
+  }
