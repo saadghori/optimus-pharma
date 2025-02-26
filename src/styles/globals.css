@@ -1,94 +1,47 @@
-/* Global Reset and Base Styles */
-html {
-  box-sizing: border-box;
-  -webkit-text-size-adjust: 100%;
-  scroll-behavior: smooth;
-}
 
-*, 
-*::before, 
-*::after {
-  box-sizing: inherit;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-/* Custom Button Styles */
 .btn-custom {
-  --btn-bg: white;
-  --btn-border: white;
-  --btn-text: #3b3b3b;
-  --btn-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-
-  background: var(--btn-bg);
-  border: 0.2rem solid var(--btn-border);
-  color: var(--btn-text);
-  padding: 0.75rem 1.5rem;
+  background-color: white;
+  border-color: white;
+  border: 0.2rem solid white;
+  color: #3b3b3b;
+  padding: 0.75rem 1.25rem;
   font-size: 0.8rem;
-  font-weight: 600;
+  font-weight: 620;
   border-radius: 4px;
-  box-shadow: var(--btn-shadow);
-  min-width: 120px;
-  transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  min-width: 100px;
 }
 
 .btn-custom:hover,
 .btn-custom:focus {
-  background: #ff7823 !important;
-  border-color: #ff7823 !important;
-  color: white !important;
-  box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.2);
-  transform: translateY(-1px);
+    background-color: #ff7823 !important;
+    border-color: #ff7823 !important;
+    color: white !important;
+    box-shadow: 0px 6px 8px rgba(0, 0, 0, 0.15) !important;
 }
 
-/* Partner Image Effects */
+
 .img-partner {
-  filter: grayscale(50%);
-  opacity: 0.8;
-  transition: 
-    filter 0.3s ease,
-    opacity 0.3s ease,
-    transform 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  cursor: pointer;
-  will-change: transform;
-}
-
-.img-partner:hover {
-  filter: grayscale(0%);
-  opacity: 1;
-  transform: scale(1.05);
-}
-
-/* Responsive Image Handling */
-img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: middle;
-}
-
-/* Enhanced Accessibility */
-@media (prefers-reduced-motion: reduce) {
-  html {
-    scroll-behavior: auto;
+    filter: grayscale(50%);
+    opacity: 0.8;
+    transition: all 0.3s ease;
+    cursor: pointer;
   }
   
-  .btn-custom,
-  .img-partner {
-    transition: none;
+  .img-partner:hover {
+    filter: grayscale(0%) !important;
+    opacity: 1 !important;
+    transform: scale(1.05);
   }
+
+  
+html, body {
+  box-sizing: border-box;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
 }
 
-/* Better Mobile Defaults */
-button,
-input,
-select,
-textarea {
-  font-size: inherit;
-  font-family: inherit;
+*, *::before, *::after {
+  box-sizing: inherit;
 }
