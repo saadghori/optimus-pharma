@@ -92,7 +92,7 @@ export default function NavBar() {
               </Nav.Link>
             </Link>
             {/* For large screens: add extra gap. For small screens: show a horizontal divider */}
-            <span className="d-none d-lg-inline" style={{ margin: '0 35px' }}></span>
+            <span className="d-none d-lg-inline" style={{ margin: '0 75px' }}></span>
             <div className="d-lg-none">
               <hr />
             </div>

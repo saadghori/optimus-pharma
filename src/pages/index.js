@@ -5,6 +5,7 @@ import ImageTextSection from "../components/ImageTextSection";
 import CTABanner from '@/components/CTABanner';
 import Hero from '@/components/Hero';
 import StatsSection from '@/components/StatsSection';
+import CarouselTextSection from '@/components/CarouselTextSection'; // <-- Import the new component
 
 const Home = () => {
   const features = [
@@ -34,10 +35,18 @@ const Home = () => {
     }
   ];
 
+  // Carousel images for the new section
+  const productImages = [
+    '/products/Catacrom.jpg',
+    '/products/Opticon-A.jpg',
+    '/products/Optibrex.jpg',
+    '/products/Optibrex-D.jpg'
+  ];
+
   return (
     <div>
       {/* Hero Section */}
-      <Hero 
+      <Hero
         imageSrc="/hero-image.jpg"
         imageAlt="Eye care background"
         heading="Innovative Solutions in Eye Care"
@@ -46,7 +55,7 @@ const Home = () => {
         overlayOpacity={0.15}
       />
 
-      {/* Features Section - Now appears below hero */}
+      {/* Features Section */}
       <FeatureCards features={features} />
 
       {/* Partners Section */}
@@ -103,16 +112,28 @@ const Home = () => {
         </Row>
       </Container>
 
-      <div>
-        <ImageTextSection
-          imageSrc="/equipment.jpg"
-          imageAlt="About Optimus Pharma"
-          heading="Leaders in Innovation"
-          text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
-        />
-        </div>
-        <StatsSection/>
-        <CTABanner />
+      {/* ImageTextSection */}
+      <ImageTextSection
+        imageSrc="/equipment.jpg"
+        imageAlt="About Optimus Pharma"
+        heading="Leaders in Innovation"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      />
+
+      {/* Stats Section */}
+      <StatsSection />
+
+      {/* New CarouselTextSection (AFTER StatsSection) */}
+      <CarouselTextSection
+        images={productImages}
+        heading="Discover Our Range of Ophthalmic Products"
+        text="We offer a variety of eye care solutions, from anti-inflammatory drops to advanced lubricants, each designed to support healthy vision and patient comfort."
+        linkUrl="/products"
+        linkText="Explore >"
+      />
+
+      {/* CTA Banner */}
+      <CTABanner />
     </div>
   );
 };
