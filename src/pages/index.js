@@ -56,7 +56,7 @@ const Home = () => {
         imageAlt="Eye care background"
         heading="Innovative Solutions in Eye Care"
         text="Delivering advanced pharmaceutical products to improve vision and enhance lives."
-        buttonText="SCHEDULE A MEETING"
+        buttonText="GET IN TOUCH"
         overlayOpacity={0.15}
       />
 

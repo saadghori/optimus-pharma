@@ -28,7 +28,7 @@ export default function Leadership() {
       <LeaderProfile
         imageSrc="/hamid-sindhu.png"
         designation="CEO / Founder"
-        name="Muhmmad Hamid"
+        name="Muhammad Hamid"
         description="With years of experience in pioneering large-scale pharmaceutical projects, Muhmmad Hamid is committed to driving innovation at Optimus Pharma. His visionary leadership ensures that each product meets the highest standards of quality and efficacy."
         imagePosition="left"
       />
