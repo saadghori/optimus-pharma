@@ -6,7 +6,7 @@
   .textContainer {
     background-color: #fff;
     padding: 2rem 4rem;
-    margin: 2rem 0; /* Default margins */
+    margin: 2rem 0; 
   }
   
   .heading {
@@ -24,21 +24,20 @@
   }
   
   @media (max-width: 768px) {
-    /* Increase the top margin of the whole section (above the image) */
     .sectionWrapper {
       margin-top: 4rem;
     }
     
     .textContainer {
       padding: 2rem 2.5rem;
-      margin-top: 0.2rem;   /* Reduced gap between image and text container */
-      margin-bottom: 0.01rem; /* Reduced gap after text */
+      margin-top: 0.2rem;   
+      margin-bottom: 0.01rem; 
     }
     
     .heading {
       font-size: 1.75rem;
-      margin-top: 0.15rem;  /* Adjust if necessary */
-      margin-bottom: 0.75rem; /* Reduced gap between heading and text */
+      margin-top: 0.15rem; 
+      margin-bottom: 0.75rem;
     }
     
     .text {
