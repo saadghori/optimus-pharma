@@ -12,7 +12,7 @@ export default function CardGrid({ items }) {
 
           
           useEffect(() => {
-            const img = new window.Image(); // Use window.Image for preloading
+            const img = new window.Image();
             img.src = item.image;
             img.onload = () => setIsImageLoaded(true);
             return () => {

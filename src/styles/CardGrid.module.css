@@ -65,7 +65,7 @@
   .skeleton {
     width: 100%;
     height: 100%;
-    background-color: #e3e3e3; 
+    background-color: #fbfbfb; 
     animation: pulse 2s infinite ease-in-out; 
     position: absolute;
     top: 0;
