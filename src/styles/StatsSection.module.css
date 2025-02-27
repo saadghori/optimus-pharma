@@ -1,5 +1,4 @@
 .statsSection {
-    background: url("/background-white.jpg") center/cover no-repeat;
     position: relative;
     padding: 60px 20px;
     display: flex;
@@ -15,6 +14,9 @@
     width: 100%;
     height: 100%;
     z-index: 1;
+    background: url("/6264.jpg") center/cover no-repeat;
+    opacity: 0.35; /* Adjust transparency */
+    z-index: -1; /* Places it behind the content */
 }
 
 .statsContainer {

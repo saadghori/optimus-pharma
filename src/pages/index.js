@@ -6,7 +6,8 @@ import ImageTextSection from "../components/ImageTextSection";
 import CTABanner from '@/components/CTABanner';
 import Hero from '@/components/Hero';
 import StatsSection from '@/components/StatsSection';
-import CarouselTextSection from '@/components/CarouselTextSection'; // <-- Import the new component
+import CarouselTextSection from '@/components/CarouselTextSection';
+import AnimatedTextSection from '@/components/AnimatedTextSection';
 
 const Home = () => {
   const features = [
@@ -135,6 +136,11 @@ const Home = () => {
         text="We offer a variety of eye care solutions, from anti-inflammatory drops to advanced lubricants, each designed to support healthy vision and patient comfort."
         linkUrl="/products"
         linkText="Explore >"
+      />
+
+      <AnimatedTextSection
+        heading="We Tirelessly Deliver Accessible, High-Quality Eye Medicine "
+        text="At Optimus Pharma, we work tirelessly to research and develop the highest quality eye medicines, making them accessible to all. Driven by a deep commitment to your vision and well-being, we blend cutting-edge science with genuine care to deliver solutions that transform lives."
       />
 
       {/* CTA Banner */}
