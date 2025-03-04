@@ -48,7 +48,7 @@ const About = () => {
         buttonText="OUR LEADERSHIP"
         overlayOpacity={0.55}
         buttonLink="/leadership"
-        overlayColor = 'rgb(16, 16, 16, 0.60)'
+        overlayColor = 'rgba(20, 35, 60, .82)'
       />
 
       {/* Image Text Section */}
