@@ -83,7 +83,7 @@ const Home = () => {
         linkUrl="/products"
         linkText="Explore >"
         carouselHeight="620px"        
-        carouselHeightMobile="450px"
+        carouselHeightMobile="435px"
       />
 
       <AnimatedTextSection
