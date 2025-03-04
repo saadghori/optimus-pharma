@@ -8,7 +8,7 @@ const Hero = ({ imageSrc, imageAlt, heading, text, buttonText, overlayOpacity = 
     <div style={{ 
       position: 'relative',
       width: '100%',
-      height: '100vh'
+      height: '95vh'
     }}>
       <Image
         src={imageSrc}

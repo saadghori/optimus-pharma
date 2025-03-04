@@ -53,12 +53,12 @@ const Home = () => {
 
       {/* Hero Section */}
       <Hero
-        imageSrc="/hero-image.jpg"
+        imageSrc="/12234.jpg"
         imageAlt="Eye care background"
         heading="Innovative Solutions in Eye Care"
         text="Delivering advanced pharmaceutical products to improve vision and enhance lives."
         buttonText="GET IN TOUCH"
-        overlayOpacity={0.15}
+        overlayOpacity={0.63}
       />
 
       {/* Features Section */}
