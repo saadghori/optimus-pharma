@@ -76,7 +76,7 @@ export default function Contact() {
               >
                 <h3 style={{ fontWeight: "bold" }}>Head Office</h3>
                 <p style={{ marginBottom: "1rem", fontWeight: "bold" }}>
-                  Optimus Pharma Pvt. (Ltd.)
+                  Optimus Laboratories
                 </p>
                 <ul
                   style={{
@@ -100,7 +100,7 @@ export default function Contact() {
                     Fax: +92-42-32212467
                   </li>
                   <li style={{ marginBottom: "0.3rem" }}>
-                    Email: info@optimuspharma.com
+                    Email: info@optimuslaboratories.com
                   </li>
                 </ul>
               </div>

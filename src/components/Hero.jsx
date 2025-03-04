@@ -1,9 +1,19 @@
+import React from 'react';
 import { Container, Stack } from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image';
 import { Button } from 'react-bootstrap';
 
-const Hero = ({ imageSrc, imageAlt, heading, text, buttonText, overlayOpacity = 0.15, buttonLink = '/contact' }) => {
+const Hero = ({ 
+  imageSrc, 
+  imageAlt, 
+  heading, 
+  text, 
+  buttonText, 
+  overlayOpacity = 0.15, 
+  buttonLink = '/contact',
+  overlayColor = 'rgba(20, 35, 60, .85)' // Default overlay color, fully opaque for base
+}) => {
   return (
     <div style={{ 
       position: 'relative',
@@ -28,7 +38,7 @@ const Hero = ({ imageSrc, imageAlt, heading, text, buttonText, overlayOpacity = 
         left: 0,
         right: 0,
         bottom: 0,
-        backgroundColor: `rgba(40, 40, 40, ${overlayOpacity})`,
+        backgroundColor: `${overlayColor.replace(/1\)/, overlayOpacity + ')')}`, // Apply opacity to the color
         zIndex: 1
       }} />
 

@@ -46,8 +46,9 @@ const About = () => {
         heading="Our Passion. Your Health."
         text="Optimus Pharma is dedicated to providing pharmaceutical solutions that make a lasting impact."
         buttonText="OUR LEADERSHIP"
-        overlayOpacity={0.45}
+        overlayOpacity={0.55}
         buttonLink="/leadership"
+        overlayColor = 'rgb(16, 16, 16, 0.60)'
       />
 
       {/* Image Text Section */}
