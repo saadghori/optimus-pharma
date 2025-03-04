@@ -1,7 +1,7 @@
 .carouselTextSection {
   background-color: #fff;
   padding: 2rem 4rem;
-  margin: 2rem 0; 
+  margin: 1rem 0; 
 }
 
 .heading {
@@ -27,7 +27,7 @@
 
 .customCarousel {
   width: 500px;
-  height: 620px;
+  height: var(--carousel-height, 585px);
   max-width: 100%;
   aspect-ratio: 16 / 9;
   overflow: hidden;
@@ -51,8 +51,8 @@
 @media (max-width: 768px) {
   .carouselTextSection {
     padding: 2rem 1.5rem;
-    margin-top: 1rem; 
-    margin-bottom: 4rem; 
+    margin-top: 0.8rem; 
+    margin-bottom: 3.5rem; 
   }
 
   .heading {
@@ -66,7 +66,7 @@
 
   .customCarousel {
     width: 500px;
-    height: 450px;
+    height: var(--carousel-height-mobile, 433px);
     max-width: 90%;
     aspect-ratio: 16 / 9;
     overflow: hidden;

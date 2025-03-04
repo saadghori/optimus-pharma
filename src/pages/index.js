@@ -64,8 +64,35 @@ const Home = () => {
       {/* Features Section */}
       <FeatureCards features={features} />
 
+      {/* ImageTextSection */}
+      <ImageTextSection
+        imageSrc="/factory2.jpg"
+        imageAlt="About Optimus Pharma"
+        heading="Leaders in Innovation"
+        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+      />
+
+      {/* Stats Section */}
+      <StatsSection />
+
+      {/* New CarouselTextSection*/}
+      <CarouselTextSection
+        images={productImages}
+        heading="Discover Our Range of Ophthalmic Products"
+        text="We offer a variety of eye care solutions, from anti-inflammatory drops to advanced lubricants, each designed to support healthy vision and patient comfort."
+        linkUrl="/products"
+        linkText="Explore >"
+        carouselHeight="620px"        
+        carouselHeightMobile="450px"
+      />
+
+      <AnimatedTextSection
+        heading="We Tirelessly Deliver Accessible, High-Quality Eye Medicine "
+        text="At Optimus Pharma, we work tirelessly to research and develop the highest quality eye medicines, making them accessible to all. Driven by a deep commitment to your vision and well-being, we blend cutting-edge science with genuine care to deliver solutions that transform lives."
+      />
+
       {/* Partners Section */}
-      <Container className="my-4">
+      <Container className="mb-5 pb-4">
         <h2 className="text-center mb-4" style={{ color: '#ff7823' }}>
           Our Partners
         </h2>
@@ -117,31 +144,6 @@ const Home = () => {
           </Col>
         </Row>
       </Container>
-
-      {/* ImageTextSection */}
-      <ImageTextSection
-        imageSrc="/equipment.jpg"
-        imageAlt="About Optimus Pharma"
-        heading="Leaders in Innovation"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
-      />
-
-      {/* Stats Section */}
-      <StatsSection />
-
-      {/* New CarouselTextSection (AFTER StatsSection) */}
-      <CarouselTextSection
-        images={productImages}
-        heading="Discover Our Range of Ophthalmic Products"
-        text="We offer a variety of eye care solutions, from anti-inflammatory drops to advanced lubricants, each designed to support healthy vision and patient comfort."
-        linkUrl="/products"
-        linkText="Explore >"
-      />
-
-      <AnimatedTextSection
-        heading="We Tirelessly Deliver Accessible, High-Quality Eye Medicine "
-        text="At Optimus Pharma, we work tirelessly to research and develop the highest quality eye medicines, making them accessible to all. Driven by a deep commitment to your vision and well-being, we blend cutting-edge science with genuine care to deliver solutions that transform lives."
-      />
 
       {/* CTA Banner */}
       <CTABanner />

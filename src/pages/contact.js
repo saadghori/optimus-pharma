@@ -11,11 +11,11 @@ export default function Contact() {
       {/* Wrapper div for full-page background with light white overlay */}
       <div
         style={{
-          backgroundImage: `url('/6264.jpg')`, 
-          backgroundSize: "cover", 
-          backgroundPosition: "center", 
-          minHeight: "100vh", 
-          width: "100%", 
+          backgroundImage: `url('/6264.jpg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          minHeight: "100vh",
+          width: "100%",
           position: "relative",
         }}
       >
@@ -27,8 +27,8 @@ export default function Contact() {
             left: 0,
             width: "100%",
             height: "100%",
-            backgroundColor: "rgba(255, 255, 255, 0.7)", 
-            zIndex: 1, 
+            backgroundColor: "rgba(255, 255, 255, 0.7)",
+            zIndex: 1,
           }}
         />
         <Container
@@ -48,10 +48,7 @@ export default function Contact() {
           </h1>
 
           {/* Introductory Text */}
-          <p
-            className="mb-4"
-            style={{ color: "black", fontSize: "1.4rem" }}
-          >
+          <p className="mb-4" style={{ color: "black", fontSize: "1.4rem" }}>
             Thank you for your interest in Optimus Pharma. Please note, fields
             marked with an asterisk (*) are required.
           </p>
@@ -74,17 +71,11 @@ export default function Contact() {
                   width: "100%",
                   maxWidth: "650px",
                   marginTop: "1.5rem",
-                  opacity: '93%',
+                  opacity: "0.93",
                 }}
               >
                 <h3 style={{ fontWeight: "bold" }}>Head Office</h3>
-                <p
-                  style={{
-                    marginBottom: "0.3rem",
-                    marginBottom: "1rem",
-                    fontWeight: "bold",
-                  }}
-                >
+                <p style={{ marginBottom: "1rem", fontWeight: "bold" }}>
                   Optimus Pharma Pvt. (Ltd.)
                 </p>
                 <ul
@@ -112,6 +103,15 @@ export default function Contact() {
                     Email: info@optimuspharma.com
                   </li>
                 </ul>
+              </div>
+
+              {/* Image placed below the orange container */}
+              <div style={{ marginTop: "1.5rem", textAlign: "center" }}>
+                <img
+                  src="/factory/conference.jpg"
+                  alt="Conference at Head Office"
+                  style={{ maxWidth: "100%", borderRadius: "6px" }}
+                />
               </div>
             </Col>
           </Row>
