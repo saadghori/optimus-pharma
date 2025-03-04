@@ -58,7 +58,7 @@ const Home = () => {
         heading="Innovative Solutions in Eye Care"
         text="Delivering advanced pharmaceutical products to improve vision and enhance lives."
         buttonText="GET IN TOUCH"
-        overlayOpacity={0.63}
+        overlayOpacity={0.73}
       />
 
       {/* Features Section */}

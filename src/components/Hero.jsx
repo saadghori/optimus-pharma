@@ -28,7 +28,7 @@ const Hero = ({ imageSrc, imageAlt, heading, text, buttonText, overlayOpacity = 
         left: 0,
         right: 0,
         bottom: 0,
-        backgroundColor: `rgba(0, 0, 0, ${overlayOpacity})`,
+        backgroundColor: `rgba(40, 40, 40, ${overlayOpacity})`,
         zIndex: 1
       }} />
 
