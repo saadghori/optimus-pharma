@@ -37,7 +37,7 @@ const About = () => {
   return (
     <div>
       <Head>
-        <title>About - Optimus Pharma</title>
+        <title>About - Optimus Laboratories</title>
       </Head>
       {/* Hero Section */}
       <Hero
@@ -77,7 +77,7 @@ const About = () => {
       {/*CarouselTextSection */}
       <div className={styles.carouselTextSection}>
         <CarouselTextSection
-          images={['/factory/reception1.jpg', '/factory/labeq2.jpg', '/factory/labeq1.jpg', '/factory/labeq3.jpg', '/machinery1.jpg', '/machinery2.jpg']}
+          images={['/factory/reception2.jpg', '/factory/labeq.jpg', '/factory/labeq3.jpg', '/factory/labeq1.jpg', '/machinery1.jpg', '/machinery2.jpg']}
           heading="World-Class Facilities for Unmatched Innovation"
           text="Our advanced laboratories and cutting-edge machinery empower breakthrough pharmaceutical research and development. Equipped with the latest technology, our facilities ensure precision, efficiency, and quality at every stage of production."
           linkUrl="/contact"

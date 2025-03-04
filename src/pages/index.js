@@ -48,7 +48,7 @@ const Home = () => {
   return (
     <div>
       <Head>
-        <title>Optimus Pharma - Innovative Eye Care Solutions</title>
+        <title>Optimus Laboratories - Your Trusted Partner in Ophthalmic Medicine</title>
       </Head>
 
       {/* Hero Section */}

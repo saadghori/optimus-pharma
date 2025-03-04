@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <>
       <Head>
-        <title>Contact - Optimus Pharma</title>
+        <title>Contact - Optimus Laboratories</title>
       </Head>
       {/* Wrapper div for full-page background with light white overlay */}
       <div

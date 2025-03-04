@@ -76,7 +76,7 @@ export default function Products() {
   return (
     <>
       <Head>
-        <title>Products - Optimus Pharma</title>
+        <title>Products - Optimus Laboratories</title>
       </Head>
       {/* Wrapper div for full-page background with light white overlay */}
       <div

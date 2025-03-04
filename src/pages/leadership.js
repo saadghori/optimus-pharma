@@ -6,7 +6,7 @@ export default function Leadership() {
   return (
     <>
       <Head>
-        <title>Leadership - Optimus Pharma</title>
+        <title>Leadership - Optimus Laboratories</title>
       </Head>
       {/* Wrapper div for full-page background with light white overlay */}
       <div
