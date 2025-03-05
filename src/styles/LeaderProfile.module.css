@@ -6,7 +6,9 @@
     border-radius: 50%;
     object-fit: cover;
     object-position: center;
-    transition: transform 0.3s ease; /* Added for smooth scaling */
+    transition: transform 0.3s ease;
+    box-shadow: 0px 50px 100px rgba(255, 120, 35, 0.10);
+    border-color: #000000;
   }
   
   .roundImage:hover {

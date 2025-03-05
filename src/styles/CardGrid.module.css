@@ -1,11 +1,11 @@
 .cardWrapper {
     position: relative;
     overflow: hidden;
-    border-radius: 8px;
+    border-radius: 3.5px;
     cursor: pointer;
     aspect-ratio: 4 / 5;
     border: 0.4rem solid white;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 4px 14px rgba(255, 120, 35, 0.15);
     background-color: #fff;
     display: flex;
     justify-content: center;

@@ -49,7 +49,7 @@ export default function Contact() {
 
           {/* Introductory Text */}
           <p className="mb-4" style={{ color: "black", fontSize: "1.4rem" }}>
-            Thank you for your interest in Optimus Pharma. Please note, fields
+            Thank you for your interest in Optimus Laboratories. Please note, fields
             marked with an asterisk (*) are required.
           </p>
 

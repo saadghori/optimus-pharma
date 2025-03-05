@@ -1,11 +1,13 @@
 /* styles/FeatureCards.module.css */
 .featureCard {
-    border-radius: 12px;
+    border-color: rgb(239, 239, 239);
+    border-radius: 2px;
     transition: transform 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 120, 35, 0.10);
   }
   
   .featureCard:hover {
-    transform: translateY(-5px);
+    transform: translateY(-9px);
   }
   
   .featureTitle {

@@ -30,7 +30,7 @@ const ImageTextSection = ({ imageSrc, imageAlt, heading, text, imagePosition = '
 
   return (
     <div className={styles.sectionWrapper}>
-      <Container className="my-5 pb-3 py-4">
+      <Container className="my-5 mb-4 pb-3 py-4">
         <Row className="align-items-center g-5">
           {imagePosition === 'left' ? (
             <>
