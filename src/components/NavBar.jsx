@@ -41,7 +41,7 @@ export default function NavBar() {
         <Link href="/" passHref legacyBehavior>
           <Navbar.Brand onClick={() => setExpanded(false)}>
             <img
-              src="/logo-optimus.png"
+              src="/logo-optimus1.png"
               alt="Optimus Pharma Logo"
               style={{ height: '50px', width: 'auto' }}
             />

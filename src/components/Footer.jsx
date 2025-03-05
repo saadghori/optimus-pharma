@@ -12,7 +12,7 @@ export default function Footer() {
           <Col md={4}>
             <div>
               <img
-                src="/logo-optimus.png"
+                src="/logo-optimus1.png"
                 alt="Optimus Pharma Logo"
                 className="mb-3"
                 style={{ maxWidth: '225px', height: 'auto' }}
