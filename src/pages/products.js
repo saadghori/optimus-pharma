@@ -71,6 +71,21 @@ export default function Products() {
       heading: "Zemag III Tablet",
       text: "Wide-format packaging for convenient dosing.",
     },
+    {
+    image: "/products/Optibrex-forte.png",
+    heading: "Optibrex Forte",
+    text: "Antibiotic eye drops designed to treat and prevent bacterial eye infections effectively.",
+    },
+    {
+      image: "/products/Optinac.png",
+      heading: "Optinac Forte",
+      text: "Relieves post-operative eye inflammation and pain with fast-acting anti-inflammatory effects.",
+    },
+    {
+      image: "/products/Lotinol.png",
+      heading: "Lotinol-T",
+      text: "Combines antibiotic and steroid for dual-action treatment of inflammation and bacterial infections.",
+    },
   ];
 
   return (

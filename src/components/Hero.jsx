@@ -12,13 +12,14 @@ const Hero = ({
   buttonText, 
   overlayOpacity = 0.15, 
   buttonLink = '/contact',
-  overlayColor = 'rgba(20, 35, 60, .82)' // Default overlay color, fully opaque for base
+  overlayColor = 'rgba(31, 33, 53, 0.72)' // Default overlay color, fully opaque for base
 }) => {
   return (
     <div style={{ 
       position: 'relative',
       width: '100%',
-      height: '100vh'
+      height: '100vh',
+      
     }}>
       <Image
         src={imageSrc}
@@ -28,7 +29,7 @@ const Hero = ({
         quality={80}
         style={{
           objectFit: 'cover',
-          zIndex: 0
+          zIndex: 0,
         }}
       />
 

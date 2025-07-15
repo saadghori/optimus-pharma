@@ -10,33 +10,33 @@ import CarouselTextSection from '@/components/CarouselTextSection';
 import AnimatedTextSection from '@/components/AnimatedTextSection';
 
 const Home = () => {
-  const features = [
+    const features = [
     {
       icon: '/medical-team.png',
       altText: 'Medical Team',
       title: 'Expert Medical Team',
-      description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore.'
+      description: 'Our team of dedicated ophthalmologists and researchers work tirelessly to ensure the highest standards of eye care.',
     },
     {
       icon: '/eye-examination.png',
       altText: 'Eye Examination',
       title: 'Comprehensive Exams',
-      description: 'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.'
+      description: 'We offer full-spectrum eye examinations using modern diagnostic tools to detect and manage vision disorders early.',
     },
     {
       icon: '/eye-drop.png',
       altText: 'Eye Drop',
       title: 'Advanced Treatments',
-      description: 'Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.'
+      description: 'Our innovative formulations are developed to target complex eye conditions with precision and minimal discomfort.',
     },
     {
       icon: '/medical-report.png',
       altText: 'Medical Report',
       title: 'Detailed Reports',
-      description: 'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'
+      description: 'Each consultation is supported by detailed medical reports to help patients and providers make informed decisions.',
     }
   ];
-
+  
   // Carousel images for the new section
   const productImages = [
     '/products/Catacrom.jpg',
@@ -53,10 +53,10 @@ const Home = () => {
 
       {/* Hero Section */}
       <Hero
-        imageSrc="/12234.jpg"
+        imageSrc="/glasseskid.jpg"
         imageAlt="Eye care background"
-        heading="Innovative Solutions in Eye Care"
-        text="Delivering advanced pharmaceutical products to improve vision and enhance lives."
+        heading="Clear Vision, Brighter Future"
+        text="Committed to advanced eye care and responsible innovation that empowers every life."
         buttonText="GET IN TOUCH"
         overlayOpacity={0.83}
       />
@@ -66,7 +66,7 @@ const Home = () => {
         imageSrc="/factory2.jpg"
         imageAlt="About Optimus Pharma"
         heading="Leaders in Innovation"
-        text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam."
+        text="Optimus Laboratories is a pioneer in ophthalmic pharmaceuticals, combining research, technology, and global partnerships to develop life-changing treatments. Our state-of-the-art manufacturing ensures every product meets rigorous safety and efficacy standards."
       />
 
       {/* Features Section */}
