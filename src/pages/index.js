@@ -80,7 +80,7 @@ const Home = () => {
         images={productImages}
         heading="Discover Our Range of Ophthalmic Products"
         text="We offer a variety of eye care solutions, from anti-inflammatory drops to advanced lubricants, each designed to support healthy vision and patient comfort."
-        linkUrl="/products"
+        linkUrl="/products/domestic/ophthalmic/eye-drops"
         linkText="Explore >"
         carouselHeight="620px"        
         carouselHeightMobile="435px"

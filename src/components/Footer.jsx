@@ -33,7 +33,7 @@ export default function Footer() {
               <Link href="/about" passHref legacyBehavior>
                 <Nav.Link className={styles.navLink}>About</Nav.Link>
               </Link>
-              <Link href="/products" passHref legacyBehavior>
+              <Link href="/products/domestic/ophthalmic/eye-drops" passHref legacyBehavior>
                 <Nav.Link className={styles.navLink}>Products</Nav.Link>
               </Link>
               <Link href="/leadership" passHref legacyBehavior>
