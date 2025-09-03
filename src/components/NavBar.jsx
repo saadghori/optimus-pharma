@@ -181,12 +181,35 @@ const Sidebar = ({ show, onClose, sidebarRef }) => {
                 onClick={handleLinkClick}>Eye Supplements</a>
             </Link>
           </div>
-          <Link href="/products/export/ent" passHref legacyBehavior>
-            <a style={{...sidebarStyles.item, ...(hoveredItem === 'ent-exp' ? sidebarStyles.itemHover : {})}}
-              onMouseEnter={() => setHoveredItem('ent-exp')}
-              onMouseLeave={() => setHoveredItem(null)}
-              onClick={handleLinkClick}>ENT</a>
-          </Link>
+          <div
+            style={{ 
+              ...sidebarStyles.item, 
+              ...(openDropdown === 'export-ent' ? sidebarStyles.itemActive : {}),
+              ...((hoveredItem === 'export-ent' && openDropdown !== 'export-ent') ? sidebarStyles.itemHover : {})
+            }}
+            onClick={(e) => handleDropdownClick(e, 'export-ent')}
+            onMouseEnter={() => setHoveredItem('export-ent')}
+            onMouseLeave={() => setHoveredItem(null)}
+          >
+            ENT
+            <span style={sidebarStyles.arrow(openDropdown === 'export-ent')}>
+              {openDropdown === 'export-ent' ? '▲' : '▼'}
+            </span>
+          </div>
+          <div style={sidebarStyles.dropdownContent(openDropdown === 'export-ent')}>
+            <Link href="/products/export/ent/nasal-sprays" passHref legacyBehavior>
+              <a style={{...sidebarStyles.dropdownItem, ...(hoveredDropdownItem === 'nasal-sprays-exp' ? sidebarStyles.dropdownItemHover : {})}}
+                onMouseEnter={() => setHoveredDropdownItem('nasal-sprays-exp')}
+                onMouseLeave={() => setHoveredDropdownItem(null)}
+                onClick={handleLinkClick}>Nasal Sprays</a>
+            </Link>
+            <Link href="/products/export/ent/ear-drops" passHref legacyBehavior>
+              <a style={{...sidebarStyles.dropdownItem, ...(hoveredDropdownItem === 'ear-drops-exp' ? sidebarStyles.dropdownItemHover : {})}}
+                onMouseEnter={() => setHoveredDropdownItem('ear-drops-exp')}
+                onMouseLeave={() => setHoveredDropdownItem(null)}
+                onClick={handleLinkClick}>Ear Drops</a>
+            </Link>
+          </div>
           <div style={sidebarStyles.divider}></div>
           <div style={sidebarStyles.categoryTitle}>Domestic</div>
           <div
@@ -225,12 +248,6 @@ const Sidebar = ({ show, onClose, sidebarRef }) => {
                 onClick={handleLinkClick}>Eye Supplements</a>
             </Link>
           </div>
-          <Link href="/products/domestic/ent" passHref legacyBehavior>
-            <a style={{...sidebarStyles.item, ...(hoveredItem === 'ent-dom' ? sidebarStyles.itemHover : {})}}
-              onMouseEnter={() => setHoveredItem('ent-dom')}
-              onMouseLeave={() => setHoveredItem(null)}
-              onClick={handleLinkClick}>ENT</a>
-          </Link>
         </div>
       </div>
       <div style={sidebarStyles.overlay(show)} onClick={onClose}></div>
