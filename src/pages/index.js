@@ -14,26 +14,26 @@ const Home = () => {
     {
       icon: '/medical-team.png',
       altText: 'Medical Team',
-      title: 'Expert Medical Team',
-      description: 'Our team of dedicated ophthalmologists and researchers work tirelessly to ensure the highest standards of eye care.',
+      title: 'Expert Laboratory Team',
+      description: 'Our team of pharmacologists, chemists, and quality assurance experts work tirelessly to ensure the highest standards in pharmaceutical manufacturing and innovation.',
     },
     {
       icon: '/eye-examination.png',
       altText: 'Eye Examination',
-      title: 'Comprehensive Exams',
-      description: 'We offer full-spectrum eye examinations using modern diagnostic tools to detect and manage vision disorders early.',
+      title: 'High-Grade Equipment',
+      description: 'We ensure purity and compliance in every batch. Our facility features sterile filling lines with laminar airflow, specialized ointment mixers, controlled cleanrooms, and laser printing for traceability.',
     },
     {
       icon: '/eye-drop.png',
       altText: 'Eye Drop',
-      title: 'Advanced Treatments',
-      description: 'Our innovative formulations are developed to target complex eye conditions with precision and minimal discomfort.',
+      title: 'Advanced Formulations',
+      description: 'Our innovative formulations are developed in-house using rigorous R&D processes to target complex eye and ENT conditions with superior efficacy and safety.',
     },
     {
       icon: '/medical-report.png',
       altText: 'Medical Report',
-      title: 'Detailed Reports',
-      description: 'Each consultation is supported by detailed medical reports to help patients and providers make informed decisions.',
+      title: 'Proven Patient Effectiveness',
+      description: 'The effectiveness of our medications is validated through real-world patient outcomes, and clinical feedback showing significant improvements in relief and recovery for millions of patients.',
     }
   ];
   
@@ -55,9 +55,15 @@ const Home = () => {
       <Hero
         imageSrc="/glasseskid.jpg"
         imageAlt="Eye care background"
-        heading="Clear Vision, Brighter Future"
-        text="Committed to advanced eye care and responsible innovation that empowers every life."
-        buttonText="GET IN TOUCH"
+        heading="Innovating for a Global Vision"
+        text={
+            <>
+              Optimus Laboratories - The manufacturing center of excellence for the Optimus Group.
+              <br />
+              Delivering world-class Ophthalmic and ENT solutions since 2025.
+            </>
+          }
+        buttonText="CONTACT US"
         overlayOpacity={0.83}
       />
 
@@ -65,8 +71,8 @@ const Home = () => {
       <ImageTextSection
         imageSrc="/factory2.jpg"
         imageAlt="About Optimus Pharma"
-        heading="Leaders in Innovation"
-        text="Optimus Laboratories is a pioneer in ophthalmic pharmaceuticals, combining research, technology, and global partnerships to develop life-changing treatments. Our state-of-the-art manufacturing ensures every product meets rigorous safety and efficacy standards."
+        heading="Who We Are"
+        text="Born from the legacy of the Optimus Group, Optimus Laboratories represents our latest leap forward. Located in the heart of Lahore, our state-of-the-art manufacturing facility is dedicated to producing high-quality pharmaceutical solutions. From precision-engineered eye drops to advanced nasal sprays, we are bringing the gift of health to both the Pakistani market and the world."
       />
 
       {/* Features Section */}

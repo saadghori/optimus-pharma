@@ -53,8 +53,8 @@ const Hero = ({
           gap={3} 
           className="h-100 justify-content-center align-items-center text-center"
         >
-          <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold' }}>{heading}</h1>
-          <p style={{ fontSize: '1.75rem', maxWidth: '600px' }}>{text}</p>
+          <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#ff7823' }}>{heading}</h1>
+          <p style={{ fontSize: '1.45rem', maxWidth: '975px' }}>{text}</p>
           <Link href={buttonLink} passHref>
             <Button 
               variant="primary" 
