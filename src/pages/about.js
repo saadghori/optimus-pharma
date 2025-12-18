@@ -44,7 +44,7 @@ const About = () => {
         imageSrc="/happyguy.jpg"
         imageAlt="Happy person"
         heading="Our Passion. Your Health."
-        text="Optimus Pharma is dedicated to providing pharmaceutical solutions that make a lasting impact."
+        text="At Optimus Laboratories we provide pharmaceutical solutions that make a lasting impact."
         buttonText="OUR LEADERSHIP"
         overlayOpacity={0.55}
         buttonLink="/leadership"
@@ -55,15 +55,14 @@ const About = () => {
       <ImageTextSection
         imageSrc="/working-guy.jpg"
         imageAlt="A professional working"
-        heading="Our Responsibility"
-        text="At Optimus Pharma, we believe in the power of innovation, ethical practices, and sustainability. Our responsibility extends beyond producing high-quality pharmaceuticals—we strive to enhance global healthcare accessibility, maintain strict compliance with industry standards, and support communities through research and development initiatives. By fostering a culture of integrity and continuous improvement, we are committed to making a meaningful impact on the well-being of people worldwide."
+        heading="Our Story"
+        text="The Optimus journey began in 2013, when a group of visionary friends united to redefine healthcare in Pakistan. While Optimus Pharma focused on specialized pharmaceuticals and Optimus Entrepôt pioneered optical device imports, the vision continued to grow. Finally, in 2025, that vision expanded into Optimus Laboratories. As the manufacturing arm of the group, we are built on a foundation of experience and deep market insight, merging our expertise to turn accessible healthcare into reality. We combine decades of collective knowledge with cutting-edge technology to manufacture products that meet rigorous global standards."
       />
-
       {/* Our Mission Section */}
       <div className={styles.missionSection}>
         <h2>Our Mission</h2>
         <p>
-          At Optimus Pharma, our mission is to transform healthcare by delivering innovative pharmaceutical solutions that enhance quality of life. We are committed to research-driven advancements, ensuring accessibility to safe and effective medications, and fostering a healthier world. Through continuous innovation and unwavering dedication, we aim to redefine industry standards and positively impact communities globally.
+          To manufacture and deliver life-changing pharmaceutical products that bridge the gap between quality and affordability, ensuring that the gift of sight and health is accessible to everyone, everywhere.
         </p>
       </div>
 
