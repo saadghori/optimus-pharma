@@ -38,7 +38,8 @@ export default function Facility() {
       {/* Full-page background with light white overlay */}
       <div
         style={{
-          backgroundSize: "cover",
+          backgroundImage: `url('/6264.jpg')`,
+          backgroundSize: "contain",
           backgroundPosition: "center",
           minHeight: "100vh",
           width: "100%",
@@ -53,7 +54,7 @@ export default function Facility() {
             left: 0,
             width: "100%",
             height: "100%",
-            backgroundColor: "rgba(255, 255, 255, 0.88)",
+            backgroundColor: "rgba(255, 255, 255, 0.78)",
             zIndex: 1,
           }}
         />
@@ -67,7 +68,7 @@ export default function Facility() {
             style={{ color: "#ff7823", fontWeight: "bold", fontSize: "2.5rem", textAlign: "center" }}
             className="my-5"
           >
-            Leading-Edge Laboratories
+            State-of-the-Art Laboratories
           </h1>
 
           {/* Headline */}
