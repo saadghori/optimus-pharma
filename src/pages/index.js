@@ -10,7 +10,7 @@ import CarouselTextSection from '@/components/CarouselTextSection';
 import AnimatedTextSection from '@/components/AnimatedTextSection';
 
 const Home = () => {
-    const features = [
+  const features = [
     {
       icon: '/medical-team.png',
       altText: 'Medical Team',
@@ -36,8 +36,7 @@ const Home = () => {
       description: 'The effectiveness of our medications is validated through real-world patient outcomes, and clinical feedback showing significant improvements in relief and recovery for millions of patients.',
     }
   ];
-  
-  // Carousel images for the new section
+
   const productImages = [
     '/products/Catacrom.jpg',
     '/products/Opticon-A.jpg',
@@ -46,7 +45,8 @@ const Home = () => {
   ];
 
   return (
-    <div>
+    /* Safety Wrapper: Prevents any component from pushing the width past 100% */
+    <div style={{ width: '100%', overflowX: 'hidden', position: 'relative' }}>
       <Head>
         <title>Optimus Laboratories - Your Trusted Partner in Ophthalmic Medicine</title>
       </Head>
@@ -57,12 +57,12 @@ const Home = () => {
         imageAlt="Eye care background"
         heading="Innovating for a Global Vision"
         text={
-            <>
-              The manufacturing center of excellence for the Optimus Group,
-              <br />
-              delivering world-class Ophthalmic and ENT solutions
-            </>
-          }
+          <>
+            The manufacturing center of excellence for the Optimus Group,
+            <br />
+            delivering world-class Ophthalmic and ENT solutions
+          </>
+        }
         buttonText="CONTACT US"
         overlayOpacity={0.83}
       />
@@ -97,12 +97,13 @@ const Home = () => {
         text="At Optimus Pharma, we work tirelessly to research and develop the highest quality eye medicines, making them accessible to all. Driven by a deep commitment to your vision and well-being, we blend cutting-edge science with genuine care to deliver solutions that transform lives."
       />
 
-      {/* Partners Section */}
-      <Container className="mb-5 pb-4">
+      {/* Partners Section - Added overflow control */}
+      <Container className="mb-5 pb-4" style={{ overflow: 'hidden' }}>
         <h2 className="text-center mb-4" style={{ color: '#ff7823' }}>
           Our Partners
         </h2>
-        <Row className="justify-content-center align-items-center g-4">
+        {/* Added mx-0 to the Row to negate Bootstrap negative margins */}
+        <Row className="justify-content-center align-items-center g-4 mx-0">
           <Col xs={6} md={2} className="text-center">
             <Image
               src="/lens-tech.jpg"
