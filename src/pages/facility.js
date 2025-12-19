@@ -7,7 +7,7 @@ export default function Facility() {
   const [selectedImage, setSelectedImage] = useState("");
 
   const galleryImages = [
-    "/factory/gallery/1.jpg",
+    "/factory/gallery/1.jpeg",
     "/factory/gallery/2.jpeg",
     "/factory/gallery/3.jpeg",
     "/factory/gallery/4.jpeg",
@@ -18,10 +18,10 @@ export default function Facility() {
     "/factory/gallery/12.jpeg",
     "/factory/gallery/13.jpeg",
     "/factory/gallery/14.jpeg",
-    "/factory/gallery/15.jpg",
-    "/factory/gallery/16.jpg",
-    "/factory/gallery/17.jpg",
-    "/factory/gallery/18.jpg",
+    "/factory/gallery/15.jpeg",
+    "/factory/gallery/16.jpeg",
+    "/factory/gallery/17.jpeg",
+    "/factory/gallery/18.jpeg",
   ];
 
   const handleImageClick = (src) => {
@@ -158,7 +158,7 @@ export default function Facility() {
           <div className="row align-items-center my-5 flex-lg-row-reverse">
             <div className="col-lg-6 col-md-12 col-sm-12">
               <img
-                src="/factory/IMG_1800.jpg"
+                src="/factory/IMG_1800.jpeg"
                 alt="Traceability & Packaging"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
