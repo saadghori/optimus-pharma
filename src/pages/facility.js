@@ -95,84 +95,88 @@ export default function Facility() {
           </div>
 
           {/* Highlight 1: Sterile Liquid Production */}
-          <div className="row align-items-center my-5">
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <img
+            <div className="row align-items-center my-5">
+            <div className="col-lg-6 col-md-12 col-sm-12 text-center">
+                <img
                 src="/factory/IMG_1794.jpeg"
                 alt="Sterile Liquid Production"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-              />
+                />
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="px-lg-5">
+            {/* Added mt-4 for mobile, mt-lg-0 to remove it on desktop */}
+            <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0"> 
+                <div className="px-lg-5">
                 <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Sterile Liquid Production</h3>
                 <p style={{ fontSize: "1.2rem", lineHeight: "1.7" }}>
-                  Our facility utilizes advanced Rotary and Linear Filling Lines encased in Laminar Air Flow (LAF) systems. This technology creates a particle-free environment, ensuring that every bottle of eye drops and nasal spray is filled under strict aseptic conditions.
+                    Our facility utilizes advanced Rotary and Linear Filling Lines encased in Laminar Air Flow (LAF) systems. This technology creates a particle-free environment, ensuring that every bottle of eye drops and nasal spray is filled under strict aseptic conditions.
                 </p>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
 
-          {/* Highlight 2: Specialized Ointment & Gel Processing */}
-          <div className="row align-items-center my-5 flex-lg-row-reverse">
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <img
+            {/* Highlight 2: Specialized Ointment & Gel Processing */}
+            <div className="row align-items-center my-5 flex-lg-row-reverse">
+            <div className="col-lg-6 col-md-12 col-sm-12 text-center">
+                <img
                 src="/factory/IMG_1778.jpeg"
                 alt="Specialized Ointment & Gel Processing"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-              />
+                />
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="px-lg-5">
+            {/* Added mt-4 for mobile, mt-lg-0 to remove it on desktop */}
+            <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
+                <div className="px-lg-5">
                 <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Specialized Ointment & Gel Processing</h3>
                 <p style={{ fontSize: "1.2rem", lineHeight: "1.7" }}>
-                  To support our diverse product range, we employ industrial-grade Cream & Ointment Mixers. These specialized vessels allow for the precise homogenization of semi-solid formulations, guaranteeing consistent texture and efficacy in our eye gels and ointments.
+                    To support our diverse product range, we employ industrial-grade Cream & Ointment Mixers. These specialized vessels allow for the precise homogenization of semi-solid formulations, guaranteeing consistent texture and efficacy in our eye gels and ointments.
                 </p>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
 
-          {/* Highlight 3: Controlled Cleanroom Environment */}
-          <div className="row align-items-center my-5">
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <img
+            {/* Highlight 3: Controlled Cleanroom Environment */}
+            <div className="row align-items-center my-5">
+            <div className="col-lg-6 col-md-12 col-sm-12 text-center">
+                <img
                 src="/factory/IMG_1830.jpeg"
                 alt="Controlled Cleanroom Environment"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-              />
+                />
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="px-lg-5">
+            {/* Added mt-4 for mobile, mt-lg-0 to remove it on desktop */}
+            <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
+                <div className="px-lg-5">
                 <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Controlled Cleanroom Environment</h3>
                 <p style={{ fontSize: "1.2rem", lineHeight: "1.7" }}>
-                  Hygiene is engineered into our infrastructure. From seamless epoxy flooring to dedicated personnel airlocks and gowning areas, every square foot is designed to prevent contamination. Our material handling utilizes interlocking pass-through boxes, ensuring safe transfer between classified zones without compromising air quality.
+                    Hygiene is engineered into our infrastructure. From seamless epoxy flooring to dedicated personnel airlocks and gowning areas, every square foot is designed to prevent contamination. Our material handling utilizes interlocking pass-through boxes, ensuring safe transfer between classified zones without compromising air quality.
                 </p>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
 
-          {/* Highlight 4: Traceability & Packaging */}
-          <div className="row align-items-center my-5 flex-lg-row-reverse">
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <img
+            {/* Highlight 4: Traceability & Packaging */}
+            <div className="row align-items-center my-5 flex-lg-row-reverse">
+            <div className="col-lg-6 col-md-12 col-sm-12 text-center">
+                <img
                 src="/factory/IMG_1800.jpeg"
                 alt="Traceability & Packaging"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-              />
+                />
             </div>
-            <div className="col-lg-6 col-md-12 col-sm-12">
-              <div className="px-lg-5">
+            {/* Added mt-4 for mobile, mt-lg-0 to remove it on desktop */}
+            <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
+                <div className="px-lg-5">
                 <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Traceability & Packaging</h3>
                 <p style={{ fontSize: "1.2rem", lineHeight: "1.7" }}>
-                  Quality extends to the final package. Our finishing lines feature dedicated Laser Printing Rooms for indelible batch coding and expiry marking, ensuring complete traceability and compliance for both domestic and export markets.
+                    Quality extends to the final package. Our finishing lines feature dedicated Laser Printing Rooms for indelible batch coding and expiry marking, ensuring complete traceability and compliance for both domestic and export markets.
                 </p>
-              </div>
+                </div>
             </div>
-          </div>
+            </div>
 
           {/* Gallery Section - Styled like Mission section */}
           <div style={{ backgroundColor: "#ff7823", padding: "3rem", marginLeft: "calc(-50vw + 50%)", marginRight: "calc(-50vw + 50%)" }}>
