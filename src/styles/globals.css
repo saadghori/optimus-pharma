@@ -36,12 +36,24 @@
 
   
 html, body {
-  box-sizing: border-box;
+  /* Using overflow-x: hidden here is the strongest way to lock the width */
+  max-width: 100%;
   overflow-x: hidden;
   margin: 0;
   padding: 0;
+  position: relative;
 }
 
+/* IMPORTANT: Bootstrap .row has negative margins (-15px). 
+   If not perfectly inside a .container, it causes horizontal scrolling.
+   This fix ensures rows don't "bleed" out.
+*/
+.row {
+  margin-right: 0 !important;
+  margin-left: 0 !important;
+}
+
+/* Ensure all elements respect the border-box sizing */
 *, *::before, *::after {
-  box-sizing: inherit;
+  box-sizing: border-box;
 }
