@@ -58,7 +58,7 @@ const Home = () => {
         heading="Innovating for a Global Vision"
         text={
             <>
-              Optimus Laboratories - The manufacturing center of excellence for the Optimus Group.
+              The manufacturing center of excellence for the Optimus Group.
               <br />
               Delivering world-class Ophthalmic and ENT solutions since 2025.
             </>

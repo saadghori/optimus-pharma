@@ -1,5 +1,3 @@
-// components/NavBar.js
-
 import { useState, useRef, useEffect } from 'react';
 import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
@@ -371,6 +369,22 @@ export default function NavBar() {
                   ABOUT
                 </Nav.Link>
               </Link>
+              <Nav.Link
+                onClick={handleProductsClick}
+                className={`${styles.inactiveLink} mx-2`}
+                data-id="products-link"
+              >
+                PRODUCTS
+              </Nav.Link>
+              <Link href="/facility" passHref legacyBehavior>
+                <Nav.Link
+                  onClick={() => { setExpanded(false); setShowSidebar(false); }}
+                  className={`${router.pathname === '/facility' ? styles.activeLink : styles.inactiveLink} mx-2`}
+                  aria-current={router.pathname === '/facility' ? 'page' : undefined}
+                >
+                  FACILITY
+                </Nav.Link>
+              </Link>
               <Link href="/leadership" passHref legacyBehavior>
                 <Nav.Link
                   onClick={() => { setExpanded(false); setShowSidebar(false); }}
@@ -380,13 +394,6 @@ export default function NavBar() {
                   LEADERSHIP
                 </Nav.Link>
               </Link>
-              <Nav.Link
-                onClick={handleProductsClick}
-                className={`${styles.inactiveLink} mx-2`}
-                data-id="products-link"
-              >
-                PRODUCTS
-              </Nav.Link>
               <span className="d-none d-lg-inline" style={{ margin: '0 50px' }}></span>
               <div className="d-lg-none">
                 <hr />
