@@ -18,7 +18,6 @@ export default function Facility() {
     "/factory/gallery/12.jpeg",
     "/factory/gallery/13.jpeg",
     "/factory/gallery/14.jpeg",
-    "/factory/gallery/15.jpeg",
     "/factory/gallery/16.jpeg",
     "/factory/gallery/17.jpeg",
     "/factory/gallery/18.jpeg",

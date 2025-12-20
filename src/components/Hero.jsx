@@ -11,7 +11,7 @@ const Hero = ({
   text, 
   buttonText, 
   overlayOpacity = 0.15, 
-  buttonLink = '/contact',
+  buttonLink = '/about',
   overlayColor = 'rgba(31, 33, 53, 0.72)' // Default overlay color, fully opaque for base
 }) => {
   return (

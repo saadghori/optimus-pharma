@@ -63,7 +63,7 @@ const Home = () => {
             delivering world-class Ophthalmic and ENT solutions
           </>
         }
-        buttonText="CONTACT US"
+        buttonText="LEARN MORE"
         overlayOpacity={0.83}
       />
 
