@@ -10,7 +10,7 @@ export const domesticProducts = [
     packSize: '15 ml',
     nature: 'Solution',
     category: 'LUBRICANT',
-    image: null,
+    image: "/products/Polytears.jpeg",
   },
   {
     id: 'polgel-eye-gel',
@@ -20,7 +20,7 @@ export const domesticProducts = [
     packSize: '10 gm',
     nature: 'Gel',
     category: 'LUBRICANT',
-    image: null,
+    image: "/products/Polygel.jpeg",
   },
   {
     id: 'optiquin-domestic',
@@ -30,7 +30,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Solution',
     category: 'ANTI-INFECTIVES',
-    image: null,
+    image: "/products/Optiquin.jpeg",
   },
   {
     id: 'optimox-domestic',
@@ -40,7 +40,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Solution',
     category: 'ANTI-INFECTIVES',
-    image: null,
+    image: "/products/Optimox.jpeg",
   },
   {
     id: 'optibrex-domestic',
@@ -50,7 +50,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Solution',
     category: 'ANTI-INFECTIVES',
-    image: "/products/Optibrex.jpg",
+    image: "/products/Optibrex.jpeg",
   },
   {
     id: 'econodex-domestic',
@@ -60,7 +60,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Suspension',
     category: 'STEROIDS',
-    image: null,
+    image: "/products/Econodex.png",
   },
   {
     id: 'econopred-domestic',
@@ -70,7 +70,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Suspension',
     category: 'STEROIDS',
-    image: "/products/Econopred.jpg",
+    image: "/products/Econopred.jpeg",
   },
   {
     id: 'lotipred-domestic',
@@ -80,7 +80,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Suspension',
     category: 'STEROIDS',
-    image: null,
+    image: "/products/Lotinol.jpeg",
   },
   {
     id: 'flarex-domestic',
@@ -90,7 +90,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Solution',
     category: 'STEROIDS',
-    image: null,
+    image: "/products/Optiflor.png",
   },
   {
     id: 'flarex-forte-domestic',
@@ -100,7 +100,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Solution',
     category: 'STEROIDS',
-    image: null,
+    image: "/products/Optiflor-Forte.jpeg",
   },
   {
     id: 'optibrex-d-domestic',
@@ -110,7 +110,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Suspension',
     category: 'STEROIDS + ANTI-INFECTIVES COMBINATIONS',
-    image: "/products/Optibrex-D.jpg",
+    image: "/products/Optibrex-D.jpeg",
   },
   {
     id: 'lotipred-t-domestic',
@@ -120,7 +120,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Suspension',
     category: 'STEROIDS + ANTI-INFECTIVES COMBINATIONS',
-    image: null,
+    image: "/products/Lotinol-T.jpeg",
   },
   {
     id: 'cetalone-domestic',
@@ -130,7 +130,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Suspension',
     category: 'STEROIDS + ANTI-INFECTIVES COMBINATIONS',
-    image: null,
+    image: "/products/Cetalone.png",
   },
   {
     id: 'optim-domestic',
@@ -140,7 +140,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Solution',
     category: 'ANTI-GLAUCOMA',
-    image: "/products/Optim.jpg",
+    image: "/products/Optim.jpeg",
   },
   {
     id: 'timodor-domestic',
@@ -150,7 +150,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Solution',
     category: 'ANTI-GLAUCOMA',
-    image: "/products/Timodor.jpg",
+    image: "/products/Timodor.jpeg",
   },
   {
     id: 'eyepat-mild-domestic',
@@ -160,7 +160,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Solution',
     category: 'ANTI-ALLERGY',
-    image: null,
+    image: "/products/Eyepat-Mild.png",
   },
   {
     id: 'eyepat-domestic',
@@ -170,7 +170,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Solution',
     category: 'ANTI-ALLERGY',
-    image: "/products/Eyepat.jpg",
+    image: "/products/Eyepat.jpeg",
   },
   {
     id: 'eyepat-forte-domestic',
@@ -180,7 +180,7 @@ export const domesticProducts = [
     packSize: '2.5 ml',
     nature: 'Solution',
     category: 'ANTI-ALLERGY',
-    image: null,
+    image: "/products/Eyepat-Forte.png",
   },
   {
     id: 'catacrom-domestic',
@@ -190,7 +190,7 @@ export const domesticProducts = [
     packSize: '15 ml',
     nature: 'Solution',
     category: 'ANTI-ALLERGY',
-    image: "/products/Catacrom.jpg",
+    image: "/products/Catacrom.jpeg",
   },
   {
     id: 'opticon-a-domestic',
@@ -200,7 +200,7 @@ export const domesticProducts = [
     packSize: '15 ml',
     nature: 'Solution',
     category: 'ANTI-ALLERGY',
-    image: "/products/Opticon-A.jpg",
+    image: "/products/Opticon-A.jpeg",
   },
   {
     id: 'optiket-domestic',
@@ -210,7 +210,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Solution',
     category: 'NSAID’S',
-    image: "/products/Optiket.jpg",
+    image: "/products/Optiket.jpeg",
   },
   {
     id: 'optinac-domestic',
@@ -220,7 +220,7 @@ export const domesticProducts = [
     packSize: '5 ml',
     nature: 'Suspension',
     category: 'NSAID’S',
-    image: null ,
+    image: "/products/Optinac.jpeg",
   },
   {
     id: 'optinac-forte-domestic',
@@ -230,7 +230,7 @@ export const domesticProducts = [
     packSize: '3 ml',
     nature: 'Suspension',
     category: 'NSAID’S',
-    image: "/products/Optinac.png",
+    image: "/products/Optinac-Forte.jpeg",
   },
   {
     id: 'mydrex-domestic',
@@ -321,7 +321,7 @@ export const domesticProducts = [
     packSize: '3.5 gm',
     nature: 'Ointment',
     category: 'ANTI-BIOTICS',
-    image: null,
+    image: "/products/Optibrex-Ointment.jpg",
   },
   {
     id: 'opticip-domestic',
@@ -331,7 +331,7 @@ export const domesticProducts = [
     packSize: '3.5 gm',
     nature: 'Ointment',
     category: 'ANTI-BIOTICS',
-    image: null,
+    image: "/products/Opticip.jpg",
   },
   {
     id: 'optiquin-ointment-domestic',
@@ -341,7 +341,7 @@ export const domesticProducts = [
     packSize: '3.5 gm',
     nature: 'Ointment',
     category: 'ANTI-BIOTICS',
-    image: null,
+    image: "/products/Optiquin-Ointment.jpg",
   },
   {
     id: 'eyethrocin-domestic',
@@ -361,7 +361,7 @@ export const domesticProducts = [
     packSize: '4.5 gm',
     nature: 'Ointment',
     category: 'ANTI-VIRAL',
-    image: null,
+    image: "/products/Optivir.jpg",
   },
   {
     id: 'optiflor-domestic',
@@ -371,7 +371,7 @@ export const domesticProducts = [
     packSize: '3.5 gm',
     nature: 'Ointment',
     category: 'STEROIDS',
-    image: null,
+    image: "/products/Optiflor-Ointment.jpg",
   },
   {
     id: 'optibrex-d-ointment-domestic',
@@ -381,7 +381,7 @@ export const domesticProducts = [
     packSize: '3.5 gm',
     nature: 'Ointment',
     category: 'STEROIDS + ANTI-INFECTIVES COMBINATIONS',
-    image: null,
+    image: "/products/Optibrex-D-Ointment.jpg",
   },
 ];
 
