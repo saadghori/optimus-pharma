@@ -5,7 +5,7 @@ export const domesticProducts = [
   {
     id: 'poltears',
     type: 'ophthalmic',
-    name: 'Polytears Eye Drops',
+    name: 'Polytears',
     activeIngredients: 'Polyethylene Glycol 400 0.4% + Propylene Glycol 0.3%',
     packSize: '15 ml',
     nature: 'Solution',
@@ -15,7 +15,7 @@ export const domesticProducts = [
   {
     id: 'polgel-eye-gel',
     type: 'ophthalmic',
-    name: 'Polygel Eye Gel',
+    name: 'Polygel',
     activeIngredients: 'Polyacrylic Acid 0.2%',
     packSize: '10 gm',
     nature: 'Gel',
@@ -55,7 +55,7 @@ export const domesticProducts = [
   {
     id: 'econodex-domestic',
     type: 'ophthalmic',
-    name: 'Econodex Eye Drops',
+    name: 'Econodex',
     activeIngredients: 'Dexamethasone 0.1%',
     packSize: '5 ml',
     nature: 'Suspension',
@@ -65,7 +65,7 @@ export const domesticProducts = [
   {
     id: 'econopred-domestic',
     type: 'ophthalmic',
-    name: 'Econopred Eye Drops',
+    name: 'Econopred',
     activeIngredients: 'Prednisolone Acetate 1%',
     packSize: '5 ml',
     nature: 'Suspension',
@@ -75,7 +75,7 @@ export const domesticProducts = [
   {
     id: 'lotipred-domestic',
     type: 'ophthalmic',
-    name: 'Lotinol Eye Drops',
+    name: 'Lotinol',
     activeIngredients: 'Loteprednol Etabonate 0.5%',
     packSize: '5 ml',
     nature: 'Suspension',
@@ -85,7 +85,7 @@ export const domesticProducts = [
   {
     id: 'flarex-domestic',
     type: 'ophthalmic',
-    name: 'Optiflor Eye Drops',
+    name: 'Optiflor',
     activeIngredients: 'Fluorometholone 0.1%',
     packSize: '5 ml',
     nature: 'Solution',
@@ -95,7 +95,7 @@ export const domesticProducts = [
   {
     id: 'flarex-forte-domestic',
     type: 'ophthalmic',
-    name: 'Optiflor Forte Eye Drops',
+    name: 'Optiflor Forte',
     activeIngredients: 'Fluorometholone 0.25%',
     packSize: '5 ml',
     nature: 'Solution',
@@ -105,7 +105,7 @@ export const domesticProducts = [
   {
     id: 'optibrex-d-domestic',
     type: 'ophthalmic',
-    name: 'Optibrex-D Eye Drops',
+    name: 'Optibrex-D',
     activeIngredients: 'Tobramycin 0.3% Dexamethasone 0.1%',
     packSize: '5 ml',
     nature: 'Suspension',
@@ -115,7 +115,7 @@ export const domesticProducts = [
   {
     id: 'lotipred-t-domestic',
     type: 'ophthalmic',
-    name: 'Lotinol-T Eye Drops',
+    name: 'Lotinol-T',
     activeIngredients: 'Tobramycin 0.3% Loteprednol Etabonate 0.5%',
     packSize: '5 ml',
     nature: 'Suspension',
@@ -125,7 +125,7 @@ export const domesticProducts = [
   {
     id: 'cetalone-domestic',
     type: 'ophthalmic',
-    name: 'Cetalone Eye Drops',
+    name: 'Cetalone',
     activeIngredients: 'Prednisolone Acetate 0.25% + Sulphacetamide 10%',
     packSize: '5 ml',
     nature: 'Suspension',
@@ -135,7 +135,7 @@ export const domesticProducts = [
   {
     id: 'optim-domestic',
     type: 'ophthalmic',
-    name: 'Optim Eye Drops',
+    name: 'Optim',
     activeIngredients: 'Timolol Maleate 0.5%',
     packSize: '5 ml',
     nature: 'Solution',
@@ -145,7 +145,7 @@ export const domesticProducts = [
   {
     id: 'timodor-domestic',
     type: 'ophthalmic',
-    name: 'Timodor Eye Drops',
+    name: 'Timodor',
     activeIngredients: 'Dorzolamide 2% + Timolol Maleate 0.5%',
     packSize: '5 ml',
     nature: 'Solution',
@@ -155,7 +155,7 @@ export const domesticProducts = [
   {
     id: 'eyepat-mild-domestic',
     type: 'ophthalmic',
-    name: 'Eyepat Mild Eye Drops',
+    name: 'Eyepat Mild',
     activeIngredients: 'Olopatadine 0.1%',
     packSize: '5 ml',
     nature: 'Solution',
@@ -165,7 +165,7 @@ export const domesticProducts = [
   {
     id: 'eyepat-domestic',
     type: 'ophthalmic',
-    name: 'Eyepat Eye Drops',
+    name: 'Eyepat',
     activeIngredients: 'Olopatadine 0.2%',
     packSize: '5 ml',
     nature: 'Solution',
@@ -175,7 +175,7 @@ export const domesticProducts = [
   {
     id: 'eyepat-forte-domestic',
     type: 'ophthalmic',
-    name: 'Eyepat Forte Eye Drops',
+    name: 'Eyepat Forte',
     activeIngredients: 'Olopatadine 0.7%',
     packSize: '2.5 ml',
     nature: 'Solution',
@@ -185,7 +185,7 @@ export const domesticProducts = [
   {
     id: 'catacrom-domestic',
     type: 'ophthalmic',
-    name: 'Catacrom Eye Drops',
+    name: 'Catacrom',
     activeIngredients: 'Sodium Cromoglycate 4% + Tetrahydrozoline HCl 0.05%',
     packSize: '15 ml',
     nature: 'Solution',
@@ -195,7 +195,7 @@ export const domesticProducts = [
   {
     id: 'opticon-a-domestic',
     type: 'ophthalmic',
-    name: 'Opticon-A Eye Drops',
+    name: 'Opticon-A',
     activeIngredients: 'Naphazoline HCl 0.25% + Pheniramine Maleate 0.3%',
     packSize: '15 ml',
     nature: 'Solution',
@@ -205,7 +205,7 @@ export const domesticProducts = [
   {
     id: 'optiket-domestic',
     type: 'ophthalmic',
-    name: 'Optiket Eye Drops',
+    name: 'Optiket',
     activeIngredients: 'Ketorolac Tromethamine 0.5%',
     packSize: '5 ml',
     nature: 'Solution',
@@ -215,7 +215,7 @@ export const domesticProducts = [
   {
     id: 'optinac-domestic',
     type: 'ophthalmic',
-    name: 'Optinac Eye Drops',
+    name: 'Optinac',
     activeIngredients: 'Nepafenac 0.1%',
     packSize: '5 ml',
     nature: 'Suspension',
@@ -225,7 +225,7 @@ export const domesticProducts = [
   {
     id: 'optinac-forte-domestic',
     type: 'ophthalmic',
-    name: 'Optinac Forte Eye Drops',
+    name: 'Optinac Forte',
     activeIngredients: 'Nepafenac 0.3%',
     packSize: '3 ml',
     nature: 'Suspension',
@@ -235,7 +235,7 @@ export const domesticProducts = [
   {
     id: 'mydrex-domestic',
     type: 'ophthalmic',
-    name: 'Mydrex Eye Drops',
+    name: 'Mydrex',
     activeIngredients: 'Tropicamide 1.0%',
     packSize: '15 ml',
     nature: 'Solution',
@@ -245,7 +245,7 @@ export const domesticProducts = [
   {
     id: 'presby-domestic',
     type: 'ophthalmic',
-    name: 'Presby Eye Drops',
+    name: 'Presby',
     activeIngredients: 'Pilocarpine HCl 1.25%',
     packSize: '2.5 ml',
     nature: 'Solution',
@@ -255,7 +255,7 @@ export const domesticProducts = [
   {
     id: 'opticar-2-domestic',
     type: 'ophthalmic',
-    name: 'Opticar 2 Eye Drops',
+    name: 'Opticar 2',
     activeIngredients: 'Pilocarpine HCl 2.0%',
     packSize: '5 ml',
     nature: 'Solution',
@@ -265,7 +265,7 @@ export const domesticProducts = [
   {
     id: 'opticar-4-domestic',
     type: 'ophthalmic',
-    name: 'Opticar 4 Eye Drops',
+    name: 'Opticar 4',
     activeIngredients: 'Pilocarpine HCl 4.0%',
     packSize: '5 ml',
     nature: 'Solution',
@@ -275,7 +275,7 @@ export const domesticProducts = [
   {
     id: 'opticain-domestic',
     type: 'ophthalmic',
-    name: 'Opticaine Eye Drops',
+    name: 'Opticaine',
     activeIngredients: 'Proparacaine HCl 0.5%',
     packSize: '15 ml',
     nature: 'Solution',
@@ -286,7 +286,7 @@ export const domesticProducts = [
   {
     id: 'Optivit-domestic',
     type: 'ophthalmic',
-    name: 'Optivit-A Eye Ointment',
+    name: 'Optivit-A',
     activeIngredients: 'Vitamin-A Palmitate 250 IU/gm',
     packSize: '5 gm',
     nature: 'Ointment',
@@ -296,7 +296,7 @@ export const domesticProducts = [
   {
     id: 'Optichlor-domestic',
     type: 'ophthalmic',
-    name: 'Optichlor Eye Ointment',
+    name: 'Optichlor',
     activeIngredients: 'Chloramphenicol 1%',
     packSize: '4 gm',
     nature: 'Ointment',
@@ -306,7 +306,7 @@ export const domesticProducts = [
   {
     id: 'Optigen-domestic',
     type: 'ophthalmic',
-    name: 'Optigen Eye Ointment',
+    name: 'Optigen',
     activeIngredients: 'Gentamycin Sulphate 0.3%',
     packSize: '3.5 gm',
     nature: 'Ointment',
@@ -316,7 +316,7 @@ export const domesticProducts = [
   {
     id: 'optibrex-ointment-domestic',
     type: 'ophthalmic',
-    name: 'Optibrex Eye Ointment',
+    name: 'Optibrex',
     activeIngredients: 'Tobramycin 0.3%',
     packSize: '3.5 gm',
     nature: 'Ointment',
@@ -326,7 +326,7 @@ export const domesticProducts = [
   {
     id: 'opticip-domestic',
     type: 'ophthalmic',
-    name: 'Opticip Eye Ointment',
+    name: 'Opticip',
     activeIngredients: 'Ciprofloxacin 0.3%',
     packSize: '3.5 gm',
     nature: 'Ointment',
@@ -336,7 +336,7 @@ export const domesticProducts = [
   {
     id: 'optiquin-ointment-domestic',
     type: 'ophthalmic',
-    name: 'Optiquin Eye Ointment',
+    name: 'Optiquin',
     activeIngredients: 'Ofloxacin 0.3%',
     packSize: '3.5 gm',
     nature: 'Ointment',
@@ -346,7 +346,7 @@ export const domesticProducts = [
   {
     id: 'eyethrocin-domestic',
     type: 'ophthalmic',
-    name: 'Eyethrocin Eye Ointment',
+    name: 'Eyethrocin',
     activeIngredients: 'Erythromycin 0.5% Eye Ointment',
     packSize: '3.5 gm',
     nature: 'Ointment',
@@ -356,7 +356,7 @@ export const domesticProducts = [
   {
     id: 'optivir-domestic',
     type: 'ophthalmic',
-    name: 'Optivir Eye Ointment',
+    name: 'Optivir',
     activeIngredients: 'Acyclovir 3%',
     packSize: '4.5 gm',
     nature: 'Ointment',
@@ -366,7 +366,7 @@ export const domesticProducts = [
   {
     id: 'optiflor-domestic',
     type: 'ophthalmic',
-    name: 'Optiflor Eye Ointment',
+    name: 'Optiflor',
     activeIngredients: 'Fluorometholone 0.1%',
     packSize: '3.5 gm',
     nature: 'Ointment',
@@ -376,7 +376,7 @@ export const domesticProducts = [
   {
     id: 'optibrex-d-ointment-domestic',
     type: 'ophthalmic',
-    name: 'Optibrex-D Eye Ointment',
+    name: 'Optibrex-D',
     activeIngredients: 'Tobramycin 0.3% Dexamethasone 0.1%',
     packSize: '3.5 gm',
     nature: 'Ointment',
