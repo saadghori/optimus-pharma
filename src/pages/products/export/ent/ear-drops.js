@@ -7,17 +7,23 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { exportProducts } from '@/data/products';
 
-// First, filter for only ear drops (which are solutions or suspensions with 'ent' type)
+// 1. Filter for Ear Drops (ENT type and specifically Solutions/Suspensions)
 const earDropsOnly = exportProducts.filter(
-    p => (p.nature === 'Solution' || p.nature === 'Suspension') && p.type === 'ent'
+    p => p.type === 'ent' && (p.nature === 'Solution' || p.nature === 'Suspension')
 );
 
-// Then, build the categories from the filtered ear drops list
+// 2. Build categories - String must match your data file EXACTLY
 const productsData = [
-    { category: 'Anti-Infectives', products: earDropsOnly.filter(p => p.category === 'ANTI-INFECTIVES') },
-    { category: 'Steroids + Anti-Infectives', products: earDropsOnly.filter(p => p.category === 'STEROIDS + ANTI-INFECTIVES') },
-].filter(section => section.products.length > 0); // Only show categories that have ear drops
-
+    { 
+        category: 'Anti-Infectives', 
+        products: earDropsOnly.filter(p => p.category === 'ANTI-INFECTIVES') 
+    },
+    { 
+        category: 'Steroids + Anti-Infectives', 
+        // FIXED: Added " COMBINATIONS" to the filter to match your data objects
+        products: earDropsOnly.filter(p => p.category === 'STEROIDS + ANTI-INFECTIVES COMBINATIONS') 
+    },
+].filter(section => section.products.length > 0); 
 
 const ProductsSection = ({ category, products, marketType }) => (
     <section id={category.replace(/\s|[+]/g, '-')} style={{ marginBottom: '3rem' }}>
@@ -40,7 +46,7 @@ function EarDropsPage() {
     return (
         <ProductLayout
             title="Ear Drops"
-            description="Our range of pharmaceutical ear drops."
+            description="Our range of pharmaceutical ear drops for the export market."
         >
             <h3 style={{
                 textAlign: 'center',
@@ -52,6 +58,7 @@ function EarDropsPage() {
                 marginTop: '-1rem'
             }}>Export</h3>
             
+            {/* Navigation Links */}
             <div style={{
                 marginBottom: '2rem',
                 textAlign: 'center',
@@ -98,8 +105,14 @@ function EarDropsPage() {
                 })}
             </div>
 
+            {/* Product Sections */}
             {productsData.map(section => (
-                <ProductsSection key={section.category} category={section.category} products={section.products} marketType={marketType} />
+                <ProductsSection 
+                    key={section.category} 
+                    category={section.category} 
+                    products={section.products} 
+                    marketType={marketType} 
+                />
             ))}
         </ProductLayout>
     );

@@ -7,18 +7,27 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { exportProducts } from '@/data/products';
 
-// First, filter for only Nasal Sprays
+// Filter for only Nasal Sprays
 const nasalSpraysOnly = exportProducts.filter(
     p => p.nature === 'Nasal Spray'
 );
 
-// Then, build the categories from the filtered Nasal Sprays list
+// Updated categories to match exact data strings
 const productsData = [
-    { category: 'Steroids', products: nasalSpraysOnly.filter(p => p.category === 'STEROIDS') },
-    { category: 'Anti-Allergy', products: nasalSpraysOnly.filter(p => p.category === 'ANTI-ALLERGY') },
-    { category: 'Steroids + Anti-Allergy', products: nasalSpraysOnly.filter(p => p.category === 'STEROIDS + ANTI-ALLERGY') },
-].filter(section => section.products.length > 0); // Only show categories that have nasal sprays
-
+    { 
+        category: 'Steroids', 
+        products: nasalSpraysOnly.filter(p => p.category === 'STEROIDS') 
+    },
+    { 
+        category: 'Anti-Allergy', 
+        products: nasalSpraysOnly.filter(p => p.category === 'ANTI-ALLERGY') 
+    },
+    { 
+        // FIXED: Added "COMBINATIONS" to match your data file
+        category: 'Steroids + Anti-Allergy', 
+        products: nasalSpraysOnly.filter(p => p.category === 'STEROIDS + ANTI-ALLERGY COMBINATIONS') 
+    },
+].filter(section => section.products.length > 0); 
 
 const ProductsSection = ({ category, products, marketType }) => (
     <section id={category.replace(/\s|[+]/g, '-')} style={{ marginBottom: '3rem' }}>
@@ -100,7 +109,12 @@ function NasalSpraysPage() {
             </div>
 
             {productsData.map(section => (
-                <ProductsSection key={section.category} category={section.category} products={section.products} marketType={marketType} />
+                <ProductsSection 
+                    key={section.category} 
+                    category={section.category} 
+                    products={section.products} 
+                    marketType={marketType} 
+                />
             ))}
         </ProductLayout>
     );

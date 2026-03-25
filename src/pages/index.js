@@ -45,16 +45,15 @@ const Home = () => {
   ];
 
   return (
-    /* Safety Wrapper: Prevents any component from pushing the width past 100% */
     <div style={{ width: '100%', overflowX: 'hidden', position: 'relative' }}>
       <Head>
         <title>Optimus Laboratories - Your Trusted Partner in Ophthalmic Medicine</title>
       </Head>
 
-      {/* Hero Section */}
+      {/* Hero Section with Video and Poster */}
       <Hero
-        imageSrc="/glasseskid.jpg"
-        imageAlt="Eye care background"
+        videoSrc="/OptimusHomepageVid.mp4" 
+        imageSrc="/DJI_0159.jpg"
         heading="Innovating for a Global Vision"
         text={
           <>
@@ -64,24 +63,21 @@ const Home = () => {
           </>
         }
         buttonText="LEARN MORE"
-        overlayOpacity={0.83}
+        overlayOpacity={0.69}
+        showOverlay={true}
       />
 
-      {/* ImageTextSection */}
       <ImageTextSection
-        imageSrc="/factory2.jpg"
+        imageSrc="/DSC07699-2.jpg"
         imageAlt="About Optimus Pharma"
         heading="Who We Are"
         text="Born from the legacy of the Optimus Group, Optimus Laboratories represents our latest leap forward. Located in the heart of Lahore, our state-of-the-art manufacturing facility is dedicated to producing high-quality pharmaceutical solutions. From precision-engineered eye drops to advanced nasal sprays, we are bringing the gift of health to both the Pakistani market and the world."
       />
 
-      {/* Features Section */}
       <FeatureCards features={features} />
 
-      {/* Stats Section */}
       <StatsSection />
 
-      {/* New CarouselTextSection*/}
       <CarouselTextSection
         images={productImages}
         heading="Discover Our Range of Ophthalmic Products"
@@ -97,12 +93,10 @@ const Home = () => {
         text="At Optimus Pharma, we work tirelessly to research and develop the highest quality eye medicines, making them accessible to all. Driven by a deep commitment to your vision and well-being, we blend cutting-edge science with genuine care to deliver solutions that transform lives."
       />
 
-      {/* Partners Section - Added overflow control */}
       <Container className="mb-5 pb-4" style={{ overflow: 'hidden' }}>
         <h2 className="text-center mb-4" style={{ color: '#ff7823' }}>
           Our Partners
         </h2>
-        {/* Added mx-0 to the Row to negate Bootstrap negative margins */}
         <Row className="justify-content-center align-items-center g-4 mx-0">
           <Col xs={6} md={2} className="text-center">
             <Image
@@ -152,7 +146,6 @@ const Home = () => {
         </Row>
       </Container>
 
-      {/* CTA Banner */}
       <CTABanner />
     </div>
   );

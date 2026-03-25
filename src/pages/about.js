@@ -41,14 +41,15 @@ const About = () => {
       </Head>
       {/* Hero Section */}
       <Hero
-        imageSrc="/happyguy.jpg"
-        imageAlt="Happy person"
+        imageSrc="/DJI_0159.jpg"
+        imageAlt="Factory"
         heading="Our Passion. Your Health."
         text="At Optimus Laboratories we provide pharmaceutical solutions that make a lasting impact"
         buttonText="OUR LEADERSHIP"
-        overlayOpacity={0.55}
+        overlayOpacity={0.70}
         buttonLink="/leadership"
         overlayColor = 'rgba(31, 33, 53, 0.80)'
+        showOverlay={true}
       />
 
       {/* Image Text Section */}

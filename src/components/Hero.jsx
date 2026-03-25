@@ -1,47 +1,79 @@
 import React from 'react';
-import { Container, Stack } from 'react-bootstrap';
+import { Container, Stack, Button } from 'react-bootstrap';
 import Link from 'next/link';
 import Image from 'next/image';
-import { Button } from 'react-bootstrap';
 
 const Hero = ({ 
-  imageSrc, 
-  imageAlt, 
+  videoSrc,      
+  imageSrc,      
+  imageAlt = "Hero background",
   heading, 
   text, 
   buttonText, 
-  overlayOpacity = 0.15, 
+  overlayOpacity = 0.69, 
   buttonLink = '/about',
-  overlayColor = 'rgba(31, 33, 53, 0.72)' // Default overlay color, fully opaque for base
+  overlayColor = 'rgba(31, 33, 53, 1)',
+  showOverlay = false,
 }) => {
   return (
     <div style={{ 
       position: 'relative',
       width: '100%',
       height: '100vh',
-      
+      overflow: 'hidden' 
     }}>
-      <Image
-        src={imageSrc}
-        alt={imageAlt}
-        fill
-        priority
-        quality={80}
-        style={{
-          objectFit: 'cover',
-          zIndex: 0,
-        }}
-      />
+      {videoSrc ? (
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          preload="auto"
+          poster={imageSrc}
+          style={{
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            zIndex: 0,
+            transform: 'translateZ(0)',
+            backfaceVisibility: 'hidden',
+            WebkitBackfaceVisibility: 'hidden',
+          }}
+        >
+          <source src={videoSrc} type="video/mp4" />
+        </video>
+      ) : (
+        <Image
+          src={imageSrc}
+          alt={imageAlt}
+          fill
+          priority
+          style={{
+            objectFit: 'cover',
+            zIndex: 0,
+          }}
+        />
+      )}
 
-      <div style={{
-        position: 'absolute',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        backgroundColor: `${overlayColor.replace(/1\)/, overlayOpacity + ')')}`, // Apply opacity to the color
-        zIndex: 1
-      }} />
+      {/* Overlay - only rendered when showOverlay is true */}
+      {showOverlay && (
+        <div style={{
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          right: 0,
+          bottom: 0,
+          backgroundColor: overlayColor.replace(/[\d.]+\)$/, `${overlayOpacity})`),
+          zIndex: 1,
+          transform: 'translateZ(0)',
+          backfaceVisibility: 'hidden',
+          WebkitBackfaceVisibility: 'hidden',
+          pointerEvents: 'none',
+        }} />
+      )}
 
       <Container style={{
         position: 'relative',
@@ -55,7 +87,7 @@ const Hero = ({
         >
           <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#ff7823' }}>{heading}</h1>
           <p style={{ fontSize: '1.45rem', maxWidth: '975px' }}>{text}</p>
-          <Link href={buttonLink} passHref>
+          <Link href={buttonLink} passHref legacyBehavior>
             <Button 
               variant="primary" 
               size="lg"

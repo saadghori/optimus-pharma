@@ -3,6 +3,9 @@ import Image from 'next/image';
 
 const ProductTable = ({ products, marketType }) => {
   const [modalImage, setModalImage] = useState(null);
+  
+  // Logic to check if this is an export table
+  const isExport = marketType === 'export';
 
   const openModal = (imageSrc) => {
     setModalImage(imageSrc);
@@ -49,9 +52,6 @@ const ProductTable = ({ products, marketType }) => {
     tr: {
       transition: 'background-color 0.2s',
     },
-    'tr:hover': {
-      backgroundColor: '#f9f9f9',
-    },
     button: {
       backgroundColor: '#333',
       color: '#fff',
@@ -78,8 +78,8 @@ const ProductTable = ({ products, marketType }) => {
     },
     modalContent: {
       position: 'relative',
-      width: '380px',       // slightly wider
-      height: '420px',      // increased height
+      width: '380px',
+      height: '420px',
       backgroundColor: '#fff',
       borderRadius: '8px',
       padding: '1rem',
@@ -107,17 +107,22 @@ const ProductTable = ({ products, marketType }) => {
       <table style={tableStyles.table}>
         <thead>
           <tr>
-            <th style={{ ...tableStyles.th, width: '25%' }}>Product Name</th>
-            <th style={{ ...tableStyles.th, width: '35%' }}>Active Ingredients</th>
-            <th style={{ ...tableStyles.th, width: '10%' }}>Pack Size</th>
-            <th style={{ ...tableStyles.th, width: '18%' }}>Nature</th> {/* Increased from 15% to 18% */}
-            <th style={{ ...tableStyles.th, width: '12%' }}></th>
+            {/* Conditional Product Name Header */}
+            {!isExport && <th style={{ ...tableStyles.th, width: '25%' }}>Product Name</th>}
+            
+            {/* Adjusted widths for Export vs Domestic */}
+            <th style={{ ...tableStyles.th, width: isExport ? '50%' : '35%' }}>Active Ingredients</th>
+            <th style={{ ...tableStyles.th, width: isExport ? '15%' : '10%' }}>Pack Size</th>
+            <th style={{ ...tableStyles.th, width: isExport ? '20%' : '18%' }}>Nature</th>
+            <th style={{ ...tableStyles.th, width: isExport ? '15%' : '12%' }}></th>
           </tr>
         </thead>
         <tbody>
           {products.map(product => (
             <tr key={product.id} style={tableStyles.tr}>
-              <td style={tableStyles.td}>{product.name}</td>
+              {/* Conditional Product Name Cell */}
+              {!isExport && <td style={tableStyles.td}>{product.name}</td>}
+              
               <td style={tableStyles.td}>{product.activeIngredients}</td>
               <td style={tableStyles.td}>{product.packSize}</td>
               <td style={tableStyles.td}>{product.nature}</td>

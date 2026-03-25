@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import ProductLayout from '@/components/ProductLayout';
 import ProductTable from '@/components/ProductTable';
@@ -6,12 +5,14 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { exportProducts } from '@/data/products';
 
-// First, filter for only eye drops (Solutions and Suspensions)
+// 1. Updated Filter: Now checks for 'type' to exclude ENT/Ear drops 
+// and includes 'Emulsion' so Cyclosporine etc. don't disappear.
 const eyeDropsOnly = exportProducts.filter(
-  p => p.nature === 'Solution' || p.nature === 'Suspension' || p.nature === 'Gel'
+  p => p.type === 'ophthalmic' && 
+  ['Solution', 'Suspension', 'Gel', 'Emulsion'].includes(p.nature)
 );
 
-// Then, build the categories from the filtered eye drops list
+// 2. Build categories (Ensure these match the 'category' strings in your exportProducts data exactly)
 const productsData = [
   { category: 'Lubricant', products: eyeDropsOnly.filter(p => p.category === 'LUBRICANT') },
   { category: 'Anti-Infectives', products: eyeDropsOnly.filter(p => p.category === 'ANTI-INFECTIVES') },
@@ -19,11 +20,11 @@ const productsData = [
   { category: 'Steroids + Anti-Infectives Combinations', products: eyeDropsOnly.filter(p => p.category === 'STEROIDS + ANTI-INFECTIVES COMBINATIONS') },
   { category: 'Anti-Glaucoma', products: eyeDropsOnly.filter(p => p.category === 'ANTI-GLAUCOMA') },
   { category: 'Anti-Allergy', products: eyeDropsOnly.filter(p => p.category === 'ANTI-ALLERGY') },
-  { category: 'NSAID’s', products: eyeDropsOnly.filter(p => p.category === 'NSAID’S') },
+  { category: 'NSAID’S', products: eyeDropsOnly.filter(p => p.category === 'NSAID’S') },
   { category: 'Mydriatics', products: eyeDropsOnly.filter(p => p.category === 'MYDRIATICS') },
   { category: 'Miotics', products: eyeDropsOnly.filter(p => p.category === 'MIOTICS') },
   { category: 'Anesthetics', products: eyeDropsOnly.filter(p => p.category === 'ANESTHETICS') },
-].filter(section => section.products.length > 0); // Only show categories that have eye drops
+].filter(section => section.products.length > 0); 
 
 
 const ProductsSection = ({ category, products, marketType }) => (
@@ -35,6 +36,7 @@ const ProductsSection = ({ category, products, marketType }) => (
       marginBottom: '1.5rem',
       fontSize: '1.25rem'
     }}>{category}</h2>
+    {/* Passing marketType="export" here allows ProductTable to hide the Name column */}
     <ProductTable products={products} marketType={marketType} />
   </section>
 );
@@ -47,7 +49,7 @@ function EyeDropsPage() {
   return (
     <ProductLayout
       title="Eye Drops"
-      description="Our range of pharmaceutical eye drops."
+      description="Our range of pharmaceutical eye drops for the export market."
     >
       <h3 style={{
         textAlign: 'center',
@@ -106,7 +108,12 @@ function EyeDropsPage() {
       </div>
 
       {productsData.map(section => (
-        <ProductsSection key={section.category} category={section.category} products={section.products} marketType={marketType} />
+        <ProductsSection 
+          key={section.category} 
+          category={section.category} 
+          products={section.products} 
+          marketType={marketType} 
+        />
       ))}
     </ProductLayout>
   );
