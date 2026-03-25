@@ -1350,4 +1350,49 @@ export const supplementsExport = [
     category: 'Tablets',
     image: "/products/ZemagTablet.jpg",
   },
+
+  
 ];
+
+export const supplementsDomestic = [
+  {
+    id: 'zeforce-syrup-export',
+    type: 'ophthalmic',
+    name: 'Zeforce Syrup',
+    activeIngredients: 'Meso-Zeaxanthin / Zeaxanthin / Lutein',
+    packSize: '120 ml',
+    nature: 'Syrup',
+    category: 'Syrups',
+    image: "/products/ZeforceSyrup.jpg",
+  },
+  {
+    id: 'zemag-iii-syrup-export',
+    type: 'ophthalmic',
+    name: 'Zemag III Syrup',
+    activeIngredients: 'Meso-Zeaxanthin / Zeaxanthin / Lutein / Omege-3 & Bilberry',
+    packSize: '120 ml',
+    nature: 'Syrup',
+    category: 'Syrups',
+    image: "/products/ZemagSyrup.jpg",
+  },
+  {
+    id: 'zemag-iii-tablet-export',
+    type: 'ophthalmic',
+    name: 'Zemag III Tablet',
+    activeIngredients: 'Meso-Zeaxanthin / Zeaxanthin / Lutein / Omege-3 & Bilberry',
+    packSize: '30 Tablets',
+    nature: 'Tablet',
+    category: 'Tablets',
+    image: "/products/ZemagTablet.jpg",
+  },
+
+  
+];
+
+
+export const products = {
+  domestic: domesticProducts,
+  export: exportProducts,
+  supplementsDomestic: supplementsDomestic,
+  supplementsExport: supplementsExport,
+};
