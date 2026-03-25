@@ -53,7 +53,7 @@ const Home = () => {
       {/* Hero Section with Video and Poster */}
       <Hero
         videoSrc="/OptimusHomepageVid.mp4" 
-        imageSrc="/DJI_0159.jpg"
+        imageSrc="/DJI_0157-2.jpg"
         heading="Innovating for a Global Vision"
         text={
           <>
