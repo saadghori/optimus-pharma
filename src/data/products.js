@@ -1303,7 +1303,7 @@ export const supplementsExport = [
   {
     id: 'zeforce-syrup-export',
     type: 'ophthalmic',
-    name: 'Zeforce Syrup',
+    name: 'Zeforce',
     activeIngredients: 'Meso-Zeaxanthin / Zeaxanthin / Lutein',
     packSize: '120 ml',
     nature: 'Syrup',
@@ -1313,7 +1313,7 @@ export const supplementsExport = [
   {
     id: 'zemag-iii-syrup-export',
     type: 'ophthalmic',
-    name: 'Zemag III Syrup',
+    name: 'Zemag III',
     activeIngredients: 'Meso-Zeaxanthin / Zeaxanthin / Lutein / Omege-3 & Bilberry',
     packSize: '120 ml',
     nature: 'Syrup',
@@ -1323,7 +1323,7 @@ export const supplementsExport = [
   {
     id: 'zemag-iii-tablet-export',
     type: 'ophthalmic',
-    name: 'Zemag III Tablet',
+    name: 'Zemag III',
     activeIngredients: 'Meso-Zeaxanthin / Zeaxanthin / Lutein / Omege-3 & Bilberry',
     packSize: '30 Tablets',
     nature: 'Tablet',
@@ -1338,7 +1338,7 @@ export const supplementsDomestic = [
   {
     id: 'zeforce-syrup-export',
     type: 'ophthalmic',
-    name: 'Zeforce Syrup',
+    name: 'Zeforce',
     activeIngredients: 'Meso-Zeaxanthin / Zeaxanthin / Lutein',
     packSize: '120 ml',
     nature: 'Syrup',
@@ -1348,7 +1348,7 @@ export const supplementsDomestic = [
   {
     id: 'zemag-iii-syrup-export',
     type: 'ophthalmic',
-    name: 'Zemag III Syrup',
+    name: 'Zemag III',
     activeIngredients: 'Meso-Zeaxanthin / Zeaxanthin / Lutein / Omege-3 & Bilberry',
     packSize: '120 ml',
     nature: 'Syrup',
@@ -1358,7 +1358,7 @@ export const supplementsDomestic = [
   {
     id: 'zemag-iii-tablet-export',
     type: 'ophthalmic',
-    name: 'Zemag III Tablet',
+    name: 'Zemag III',
     activeIngredients: 'Meso-Zeaxanthin / Zeaxanthin / Lutein / Omege-3 & Bilberry',
     packSize: '30 Tablets',
     nature: 'Tablet',
