@@ -1,3 +1,4 @@
+// pages/about.js
 import Head from 'next/head';
 import Hero from '@/components/Hero';
 import ImageTextSection from '@/components/ImageTextSection';
@@ -39,27 +40,28 @@ const About = () => {
       <Head>
         <title>About - Optimus Laboratories</title>
       </Head>
-      {/* Hero Section */}
+
+      {/* Hero Section with Download Functionality */}
       <Hero
         imageSrc="/DJI_0159.jpg"
-        imageAlt="Factory"
+        imageAlt="Optimus Factory"
         heading="Our Passion. Your Health."
         text="At Optimus Laboratories we provide pharmaceutical solutions that make a lasting impact"
-        buttonText="OUR LEADERSHIP"
+        buttonText="DOWNLOAD CATALOGUE"
+        buttonLink="/Optimus-Catalogue.pdf" // Ensure this file exists in /public
+        isDownload={true}
         overlayOpacity={0.70}
-        buttonLink="/leadership"
-        overlayColor = 'rgba(31, 33, 53, 0.80)'
+        overlayColor='rgba(31, 33, 53, 1)'
         showOverlay={true}
       />
 
-      {/* Image Text Section */}
       <ImageTextSection
         imageSrc="/working-guy.jpg"
-        imageAlt="A professional working"
+        imageAlt="Our Story"
         heading="Our Story"
-        text="The Optimus journey began in 2013, when a group of visionary friends united to redefine healthcare in Pakistan. While Optimus Pharma focused on specialized pharmaceuticals and Optimus Entrepôt pioneered optical device imports, the vision continued to grow. Finally, in 2025, that vision expanded into Optimus Laboratories. As the manufacturing arm of the group, we are built on a foundation of experience and deep market insight, merging our expertise to turn accessible healthcare into reality. We combine decades of collective knowledge with cutting-edge technology to manufacture products that meet rigorous global standards."
+        text="The Optimus journey began in 2013, when a group of visionary friends united to redefine healthcare in Pakistan. While Optimus Pharma focused on specialized pharmaceuticals and Optimus Entrepôt pioneered optical device imports, the vision continued to grow. Finally, in 2025, that vision expanded into Optimus Laboratories. As the manufacturing arm of the group, we are built on a foundation of experience and deep market insight, merging our expertise to turn accessible healthcare into reality."
       />
-      {/* Our Mission Section */}
+
       <div className={styles.missionSection}>
         <h2>Our Mission</h2>
         <p>
@@ -67,7 +69,6 @@ const About = () => {
         </p>
       </div>
 
-      {/* Why Choose Us Section */}
       <div className={styles.whyChooseUsSection}>
         <h2 style={{ color: '#ff7823', textAlign: 'center', marginBottom: '0.15rem', fontSize: '2.2rem' }}>
           Why Choose Us?
@@ -75,18 +76,16 @@ const About = () => {
         <FeatureCards features={features} />
       </div>
 
-      {/*CarouselTextSection */}
       <div className={styles.carouselTextSection}>
         <CarouselTextSection
           images={['/factory/reception2.jpg', '/factory/labeq.jpg', '/factory/labeq3.jpg', '/factory/labeq1.jpg', '/machinery1.jpg', '/machinery2.jpg']}
           heading="World-Class Facilities for Unmatched Innovation"
           text="Our advanced laboratories and cutting-edge machinery empower breakthrough pharmaceutical research and development. Equipped with the latest technology, our facilities ensure precision, efficiency, and quality at every stage of production."
           linkUrl="/facility"
-          linkText="Learn more>"
+          linkText="Learn more >"
         />
       </div>
 
-      {/* Call to Action Banner */}
       <CTABanner />
     </div>
   );
