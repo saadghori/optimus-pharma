@@ -1,5 +1,5 @@
 import Head from "next/head";
-import { Container, Carousel, Modal } from "react-bootstrap";
+import { Container, Carousel, Modal, Row, Col } from "react-bootstrap";
 import { useState, useMemo } from "react";
 
 export default function Facility() {
@@ -32,6 +32,23 @@ export default function Facility() {
   const handleImageClick = (src) => {
     setSelectedImage(src);
     setShowModal(true);
+  };
+
+  const certStyle = {
+    padding: "2rem",
+    textAlign: "center",
+    border: "1px solid #eee",
+    borderRadius: "8px",
+    height: "100%",
+    backgroundColor: "rgba(255, 255, 255, 0.6)",
+    transition: "transform 0.3s ease"
+  };
+
+  const certTitleStyle = {
+    color: "#ff7823",
+    fontWeight: "bold",
+    fontSize: "1.25rem",
+    marginBottom: "0.5rem"
   };
 
   return (
@@ -80,7 +97,6 @@ export default function Facility() {
             </p>
           </div>
 
-          {/* Highlight 1: HIGH PRIORITY */}
           <div className="row align-items-center my-5">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
               <img
@@ -88,7 +104,7 @@ export default function Facility() {
                 alt="Sterile Liquid Production"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-                fetchpriority="high" // Loads this immediately
+                fetchpriority="high"
               />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0"> 
@@ -101,7 +117,6 @@ export default function Facility() {
             </div>
           </div>
 
-          {/* Highlight 2: HIGH PRIORITY */}
           <div className="row align-items-center my-5 flex-lg-row-reverse">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
               <img
@@ -109,7 +124,7 @@ export default function Facility() {
                 alt="Specialized Ointment & Gel Processing"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-                fetchpriority="high" // Loads this immediately
+                fetchpriority="high"
               />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
@@ -122,7 +137,6 @@ export default function Facility() {
             </div>
           </div>
 
-          {/* Highlight 3: LAZY LOADED */}
           <div className="row align-items-center my-5">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
               <img
@@ -130,7 +144,7 @@ export default function Facility() {
                 alt="Advanced Distillation Technology"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-                loading="lazy" // Waits until user scrolls here
+                loading="lazy"
               />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
@@ -143,7 +157,6 @@ export default function Facility() {
             </div>
           </div>
 
-          {/* Highlight 4: LAZY LOADED */}
           <div className="row align-items-center my-5 flex-lg-row-reverse">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
               <img
@@ -151,7 +164,7 @@ export default function Facility() {
                 alt="Rigorous Quality Testing"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-                loading="lazy" // Waits until user scrolls here
+                loading="lazy"
               />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
@@ -164,7 +177,6 @@ export default function Facility() {
             </div>
           </div>
 
-          {/* Gallery Section - ALL IMAGES LAZY LOADED */}
           <div style={{ backgroundColor: "#ff7823", padding: "3rem", marginLeft: "calc(-50vw + 50%)", marginRight: "calc(-50vw + 50%)" }}>
             <h2 style={{ color: "white", textAlign: "center", fontSize: "2rem", fontWeight: "bold", marginBottom: "1.5rem" }}>Gallery</h2>
             <p style={{ color: "white", fontSize: "1.4rem", textAlign: "center", marginBottom: "3rem" }}>
@@ -183,7 +195,7 @@ export default function Facility() {
                           className="img-fluid rounded shadow"
                           style={{ height: "280px", width: "100%", objectFit: "cover", cursor: "pointer" }}
                           onClick={() => handleImageClick(src)}
-                          loading="lazy" // Critical: browser won't download until the slide is visible
+                          loading="lazy"
                         />
                       </div>
                     ))}
@@ -191,6 +203,57 @@ export default function Facility() {
                 </Carousel.Item>
               ))}
             </Carousel>
+          </div>
+
+          {/* New Certifications & Memberships Section */}
+          <div className="py-5 my-5">
+            <h2 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "2.2rem", textAlign: "center", marginBottom: "3rem" }}>
+              Certifications & Compliance
+            </h2>
+            <Row className="g-4 mb-5">
+              <Col md={3}>
+                <div style={certStyle}>
+                  <div style={certTitleStyle}>GMP</div>
+                  <p className="mb-0">Good Manufacturing Practice Compliant Facility</p>
+                </div>
+              </Col>
+              <Col md={3}>
+                <div style={certStyle}>
+                  <div style={certTitleStyle}>ISO 9001:2015</div>
+                  <p className="mb-0">Quality Management System (QMS)</p>
+                </div>
+              </Col>
+              <Col md={3}>
+                <div style={certStyle}>
+                  <div style={certTitleStyle}>ISO 14001:2015</div>
+                  <p className="mb-0">Environmental Management System (EMS)</p>
+                </div>
+              </Col>
+              <Col md={3}>
+                <div style={certStyle}>
+                  <div style={certTitleStyle}>ISO 45001:2018</div>
+                  <p className="mb-0">Occupational Health and Safety Management System (OHSMS)</p>
+                </div>
+              </Col>
+            </Row>
+
+            <h2 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "2.2rem", textAlign: "center", marginTop: "4rem", marginBottom: "3rem" }}>
+              Memberships
+            </h2>
+            <Row className="g-4 justify-content-center">
+              <Col md={4}>
+                <div style={certStyle}>
+                  <div style={certTitleStyle}>LCCI</div>
+                  <p className="mb-0">The Lahore Chamber of Commerce and Industry</p>
+                </div>
+              </Col>
+              <Col md={4}>
+                <div style={certStyle}>
+                  <div style={certTitleStyle}>PPMA</div>
+                  <p className="mb-0">Pakistan Pharmaceutical Manufacturers Association</p>
+                </div>
+              </Col>
+            </Row>
           </div>
 
           <Modal show={showModal} onHide={() => setShowModal(false)} centered size="xl">

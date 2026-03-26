@@ -8,18 +8,16 @@ export default function Contact() {
       <Head>
         <title>Contact - Optimus Laboratories</title>
       </Head>
-      {/* Wrapper div for full-page background with light white overlay */}
+      {/* Wrapper div - Background image removed */}
       <div
         style={{
-          backgroundImage: `url('/6264.jpg')`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
           minHeight: "100vh",
           width: "100%",
           position: "relative",
+          backgroundColor: "#fff", // Ensuring a clean white base
         }}
       >
-        {/* Light white overlay */}
+        {/* Light white overlay - Kept as per instructions */}
         <div
           style={{
             position: "absolute",
@@ -75,19 +73,19 @@ export default function Contact() {
                 }}
               >
                 <h3 style={{ fontWeight: "bold" }}>Head Office</h3>
-                  <ul
-                    style={{
-                      fontStyle: "normal",
-                      fontSize: "0.9rem",
-                      lineHeight: "1.4",
-                      margin: 0,
-                      paddingLeft: "1.2rem",
-                    }}
-                  >
-                    <li style={{ marginBottom: "0.3rem" }}>
-                      259 F/I-Block, Wapda Town, Lahore, Pakistan
-                    </li>
-                  </ul>
+                <ul
+                  style={{
+                    fontStyle: "normal",
+                    fontSize: "0.9rem",
+                    lineHeight: "1.4",
+                    margin: 0,
+                    paddingLeft: "1.2rem",
+                  }}
+                >
+                  <li style={{ marginBottom: "0.3rem" }}>
+                    259 F/I-Block, Wapda Town, Lahore, Pakistan
+                  </li>
+                </ul>
                 
                 <h3 style={{ fontWeight: "bold" }}>Optimus Laboratories</h3>
                 <ul

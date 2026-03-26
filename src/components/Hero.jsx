@@ -19,8 +19,8 @@ const Hero = ({
 }) => {
   const content = (
     <Stack gap={3} className="h-100 justify-content-center align-items-center text-center">
-      <h1 style={{ fontSize: '3.5rem', fontWeight: 'bold', color: '#ff7823' }}>{heading}</h1>
-      <p style={{ fontSize: '1.45rem', maxWidth: '975px' }}>{text}</p>
+      <h1 style={{ fontSize: '2.85rem', fontWeight: 'bold', color: '#ff7823' }}>{heading}</h1>
+      <p style={{ fontSize: '1.4rem', maxWidth: '975px' }}>{text}</p>
       
       {isDownload ? (
         <a href={buttonLink} download className="btn btn-primary btn-lg btn-custom">
