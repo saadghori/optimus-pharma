@@ -50,7 +50,7 @@ const About = () => {
         buttonText="DOWNLOAD CATALOGUE"
         buttonLink="/Optimus-Catalogue.pdf" 
         isDownload={true}
-        overlayOpacity={0.70}
+        overlayOpacity={0.50}
         overlayColor='rgba(31, 33, 53, 1)'
         showOverlay={true}
         priority={true} 

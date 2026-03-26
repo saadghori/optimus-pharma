@@ -15,12 +15,21 @@ const Hero = ({
   overlayColor = 'rgba(31, 33, 53, 1)',
   showOverlay = false,
   isDownload = false,
-  priority = true // Added this prop, defaults to true for Hero
+  priority = true 
 }) => {
+  // Pre-calculate the background color to ensure zero-delay rendering
+  const backgroundColor = showOverlay 
+    ? overlayColor.replace(/[\d.]+\)$/, `${overlayOpacity})`) 
+    : 'transparent';
+
   const content = (
-    <Stack gap={3} className="h-100 justify-content-center align-items-center text-center">
+    <Stack 
+      gap={3} 
+      className="h-100 justify-content-center align-items-center text-center"
+      style={{ paddingTop: '130px' }} 
+    >
       <h1 style={{ fontSize: '2.85rem', fontWeight: 'bold', color: '#ff7823' }}>{heading}</h1>
-      <p style={{ fontSize: '1.4rem', maxWidth: '975px' }}>{text}</p>
+      <div style={{ fontSize: '1.4rem', maxWidth: '975px' }}>{text}</div>
       
       {isDownload ? (
         <a href={buttonLink} download className="btn btn-primary btn-lg btn-custom">
@@ -37,14 +46,14 @@ const Hero = ({
   );
 
   return (
-    <div style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
+    <div style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden', backgroundColor: '#1f2135' }}>
       {videoSrc ? (
         <video 
           autoPlay 
           muted 
           loop 
           playsInline 
-          preload="auto" // Ensures it starts fetching metadata immediately
+          preload="auto" 
           style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
         >
           <source src={videoSrc} type="video/mp4" />
@@ -54,17 +63,19 @@ const Hero = ({
           src={imageSrc} 
           alt={imageAlt} 
           fill 
-          priority={priority} // Tells Next.js to preload this
-          fetchPriority={priority ? "high" : "auto"} // Browser-level instruction
+          priority={priority} 
+          fetchPriority={priority ? "high" : "auto"} 
           style={{ objectFit: 'cover', zIndex: 0 }} 
         />
       )}
 
       {showOverlay && (
         <div style={{
-          position: 'absolute', inset: 0,
-          backgroundColor: overlayColor.replace(/[\d.]+\)$/, `${overlayOpacity})`),
-          zIndex: 1, pointerEvents: 'none'
+          position: 'absolute', 
+          inset: 0,
+          backgroundColor: backgroundColor,
+          zIndex: 1, 
+          pointerEvents: 'none'
         }} />
       )}
 

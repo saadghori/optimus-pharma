@@ -63,7 +63,7 @@ const Home = () => {
           </>
         }
         buttonText="LEARN MORE"
-        overlayOpacity={0.69}
+        overlayOpacity={0.60}
         showOverlay={true}
         priority={true} 
       />
