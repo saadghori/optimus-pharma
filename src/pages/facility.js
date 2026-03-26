@@ -14,14 +14,13 @@ export default function Facility() {
     "/factory/gallery/17.jpg", "/factory/gallery/18.jpg", "/factory/gallery/19.jpg",
     "/factory/gallery/20.jpg", "/factory/gallery/21.jpg", "/factory/gallery/22.jpg",
     "/factory/gallery/23.jpg", "/factory/gallery/24.jpg", "/factory/gallery/25.jpg",
-    "/factory/gallery/26.jpg", "/factory/gallery/27.jpg", "/factory/gallery/28.jpg", "/factory/gallery/30.jpg", "/factory/gallery/31.jpg",
-    "/factory/gallery/32.jpg", "/factory/gallery/33.jpg", "/factory/gallery/34.jpg",
-    "/factory/gallery/35.jpg", "/factory/gallery/36.jpg", "/factory/gallery/37.jpg",
-    "/factory/gallery/38.jpg", "/factory/gallery/39.jpg", "/factory/gallery/40.jpg",
-    "/factory/gallery/41.jpg",
+    "/factory/gallery/26.jpg", "/factory/gallery/27.jpg", "/factory/gallery/28.jpg",
+    "/factory/gallery/30.jpg", "/factory/gallery/31.jpg", "/factory/gallery/32.jpg",
+    "/factory/gallery/33.jpg", "/factory/gallery/34.jpg", "/factory/gallery/35.jpg",
+    "/factory/gallery/36.jpg", "/factory/gallery/37.jpg", "/factory/gallery/38.jpg",
+    "/factory/gallery/39.jpg", "/factory/gallery/40.jpg", "/factory/gallery/41.jpg",
   ];
 
-  // Logic to split the 41 images into chunks of 3 for the carousel slides
   const chunkedImages = useMemo(() => {
     const chunks = [];
     for (let i = 0; i < galleryImages.length; i += 3) {
@@ -41,7 +40,6 @@ export default function Facility() {
         <title>Manufacturing Excellence - Optimus Laboratories</title>
       </Head>
 
-      {/* Full-page background with light white overlay */}
       <div
         style={{
           backgroundImage: `url('/6264.jpg')`,
@@ -52,7 +50,6 @@ export default function Facility() {
           position: "relative",
         }}
       >
-        {/* Light white overlay */}
         <div
           style={{
             position: "absolute",
@@ -65,32 +62,19 @@ export default function Facility() {
           }}
         />
 
-        <Container
-          className="py-5 px-4"
-          style={{ position: "relative", zIndex: 2 }}
-        >
-          {/* Page Title */}
-          <h1
-            style={{ color: "#ff7823", fontWeight: "bold", fontSize: "2.5rem", textAlign: "center" }}
-            className="my-5"
-          >
+        <Container className="py-5 px-4" style={{ position: "relative", zIndex: 2 }}>
+          <h1 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "2.5rem", textAlign: "center" }} className="my-5">
             State-of-the-Art Laboratories
           </h1>
 
-          {/* Headline */}
-          <h2
-            style={{ color: "#ff7823", fontWeight: "bold", fontSize: "2rem", textAlign: "center" }}
-            className="mb-4"
-          >
+          <h2 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "2rem", textAlign: "center" }} className="mb-4">
             Precision Engineering Meets Pharmaceutical Purity
           </h2>
 
-          {/* Introductory Text */}
           <p style={{ fontSize: "1.4rem", textAlign: "center", maxWidth: "950px", margin: "0 auto 5rem" }}>
-            At Optimus Laboratories, we don’t just manufacture; we craft healthcare solutions with absolute precision. Our state-of-the-art facility is purpose-built to handle the delicate requirements of sterile ophthalmic and ENT preparations.
+            At Optimus Laboratories, we don’t just manufacture; we craft healthcare solutions with absolute precision.
           </p>
 
-          {/* Intro Call to Scroll - Orange background with white text */}
           <div style={{ backgroundColor: "#ff7823", padding: "3rem", marginBottom: "6rem", marginLeft: "calc(-50vw + 50%)", marginRight: "calc(-50vw + 50%)" }}>
             <p style={{ color: "white", fontSize: "1.8rem", fontWeight: "bold", textAlign: "center", margin: 0 }}>
               Equipped with industry-leading machinery and rigorous quality controls,
@@ -100,7 +84,7 @@ export default function Facility() {
             </p>
           </div>
 
-          {/* Highlight 1: Sterile Liquid Production */}
+          {/* Highlight 1: HIGH PRIORITY */}
           <div className="row align-items-center my-5">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
               <img
@@ -108,19 +92,20 @@ export default function Facility() {
                 alt="Sterile Liquid Production"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
+                fetchpriority="high" // Loads this immediately
               />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0"> 
               <div className="px-lg-5">
                 <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Sterile Liquid Production</h3>
                 <p style={{ fontSize: "1.2rem", lineHeight: "1.7" }}>
-                  Our facility utilizes advanced Rotary and Linear Filling Lines encased in Laminar Air Flow (LAF) systems. This technology creates a particle-free environment, ensuring that every bottle of eye drops and nasal spray is filled under strict aseptic conditions.
+                   Our facility utilizes advanced Rotary and Linear Filling Lines encased in Laminar Air Flow (LAF) systems. This technology creates a particle-free environment, ensuring that every bottle of eye drops and nasal spray is filled under strict aseptic conditions.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Highlight 2: Specialized Ointment & Gel Processing */}
+          {/* Highlight 2: HIGH PRIORITY */}
           <div className="row align-items-center my-5 flex-lg-row-reverse">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
               <img
@@ -128,6 +113,7 @@ export default function Facility() {
                 alt="Specialized Ointment & Gel Processing"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
+                fetchpriority="high" // Loads this immediately
               />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
@@ -140,7 +126,7 @@ export default function Facility() {
             </div>
           </div>
 
-          {/* Highlight 3: Advanced Distillation Technology */}
+          {/* Highlight 3: LAZY LOADED */}
           <div className="row align-items-center my-5">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
               <img
@@ -148,19 +134,20 @@ export default function Facility() {
                 alt="Advanced Distillation Technology"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
+                loading="lazy" // Waits until user scrolls here
               />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
               <div className="px-lg-5">
                 <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Advanced Distillation Technology</h3>
                 <p style={{ fontSize: "1.2rem", lineHeight: "1.7" }}>
-                  Our facility features a dedicated Double Distillation Plant with a 200 Ltr/hr capacity. This multi-column system utilizes thermodynamic principles to eliminate endotoxins and volatile impurities, providing a continuous supply of high-purity sterile water.
+                   Our facility features a dedicated Double Distillation Plant with a 200 Ltr/hr capacity. This multi-column system utilizes thermodynamic principles to eliminate endotoxins and volatile impurities, providing a continuous supply of high-purity sterile water.
                 </p>
               </div>
             </div>
           </div>
 
-          {/* Highlight 4: Rigorous Quality Testing */}
+          {/* Highlight 4: LAZY LOADED */}
           <div className="row align-items-center my-5 flex-lg-row-reverse">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
               <img
@@ -168,6 +155,7 @@ export default function Facility() {
                 alt="Rigorous Quality Testing"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
+                loading="lazy" // Waits until user scrolls here
               />
             </div>
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
@@ -180,16 +168,13 @@ export default function Facility() {
             </div>
           </div>
 
-          {/* Gallery Section */}
+          {/* Gallery Section - ALL IMAGES LAZY LOADED */}
           <div style={{ backgroundColor: "#ff7823", padding: "3rem", marginLeft: "calc(-50vw + 50%)", marginRight: "calc(-50vw + 50%)" }}>
-            <h2 style={{ color: "white", textAlign: "center", fontSize: "2rem", fontWeight: "bold", marginBottom: "1.5rem" }}>
-              Gallery
-            </h2>
+            <h2 style={{ color: "white", textAlign: "center", fontSize: "2rem", fontWeight: "bold", marginBottom: "1.5rem" }}>Gallery</h2>
             <p style={{ color: "white", fontSize: "1.4rem", textAlign: "center", marginBottom: "3rem" }}>
               Explore more views of our cutting-edge pharmaceutical manufacturing facility.
             </p>
 
-            {/* Dynamic Carousel showing all 41 images */}
             <Carousel indicators={false} interval={null} wrap={true}>
               {chunkedImages.map((imageGroup, slideIndex) => (
                 <Carousel.Item key={slideIndex}>
@@ -202,6 +187,7 @@ export default function Facility() {
                           className="img-fluid rounded shadow"
                           style={{ height: "280px", width: "100%", objectFit: "cover", cursor: "pointer" }}
                           onClick={() => handleImageClick(src)}
+                          loading="lazy" // Critical: browser won't download until the slide is visible
                         />
                       </div>
                     ))}
@@ -211,7 +197,6 @@ export default function Facility() {
             </Carousel>
           </div>
 
-          {/* Modal for enlarged image */}
           <Modal show={showModal} onHide={() => setShowModal(false)} centered size="xl">
             <Modal.Body className="p-0">
               <img src={selectedImage} alt="Enlarged" className="img-fluid" style={{ width: "100%" }} />
