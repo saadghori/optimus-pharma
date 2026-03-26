@@ -41,18 +41,19 @@ const About = () => {
         <title>About - Optimus Laboratories</title>
       </Head>
 
-      {/* Hero Section with Download Functionality */}
+      {/* Hero Section - Added priority prop for fast loading */}
       <Hero
         imageSrc="/DJI_0159.jpg"
         imageAlt="Optimus Factory"
         heading="Our Passion. Your Health."
         text="At Optimus Laboratories we provide pharmaceutical solutions that make a lasting impact"
         buttonText="DOWNLOAD CATALOGUE"
-        buttonLink="/Optimus-Catalogue.pdf" // Ensure this file exists in /public
+        buttonLink="/Optimus-Catalogue.pdf" 
         isDownload={true}
         overlayOpacity={0.70}
         overlayColor='rgba(31, 33, 53, 1)'
         showOverlay={true}
+        priority={true} 
       />
 
       <ImageTextSection

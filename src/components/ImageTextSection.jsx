@@ -2,8 +2,15 @@ import { Row, Col, Container } from 'react-bootstrap';
 import Image from 'next/image';
 import styles from '@/styles/ImageTextSection.module.css';
 
-const ImageTextSection = ({ imageSrc, imageAlt, heading, text, imagePosition = 'left' }) => {
-  // Define the image column
+const ImageTextSection = ({ 
+  imageSrc, 
+  imageAlt, 
+  heading, 
+  text, 
+  imagePosition = 'left',
+  priority = false // New prop: set to true ONLY for the first section on a page
+}) => {
+  
   const imageCol = (
     <Col md={6}>
       <div className={styles.imageContainer}>
@@ -13,12 +20,14 @@ const ImageTextSection = ({ imageSrc, imageAlt, heading, text, imagePosition = '
           width={600}
           height={400}
           className="img-fluid rounded-3"
+          priority={priority}
+          // If not priority, Next.js automatically applies loading="lazy"
+          fetchPriority={priority ? "high" : "low"} 
         />
       </div>
     </Col>
   );
 
-  // Define the text column
   const textCol = (
     <Col md={6}>
       <div className={styles.textContainer}>

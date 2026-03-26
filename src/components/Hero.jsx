@@ -1,4 +1,3 @@
-// components/Hero.js
 import React from 'react';
 import { Container, Stack, Button } from 'react-bootstrap';
 import Link from 'next/link';
@@ -15,7 +14,8 @@ const Hero = ({
   buttonLink = '/about',
   overlayColor = 'rgba(31, 33, 53, 1)',
   showOverlay = false,
-  isDownload = false // New prop added
+  isDownload = false,
+  priority = true // Added this prop, defaults to true for Hero
 }) => {
   const content = (
     <Stack gap={3} className="h-100 justify-content-center align-items-center text-center">
@@ -23,12 +23,10 @@ const Hero = ({
       <p style={{ fontSize: '1.45rem', maxWidth: '975px' }}>{text}</p>
       
       {isDownload ? (
-        /* Standard anchor tag for downloads */
         <a href={buttonLink} download className="btn btn-primary btn-lg btn-custom">
           {buttonText}
         </a>
       ) : (
-        /* Next.js Link for page navigation */
         <Link href={buttonLink} passHref legacyBehavior>
           <Button variant="primary" size="lg" className='btn-custom'>
             {buttonText}
@@ -40,13 +38,26 @@ const Hero = ({
 
   return (
     <div style={{ position: 'relative', width: '100%', height: '100vh', overflow: 'hidden' }}>
-      {/* Background Logic (Video/Image) stays the same */}
       {videoSrc ? (
-        <video autoPlay muted loop playsInline style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}>
+        <video 
+          autoPlay 
+          muted 
+          loop 
+          playsInline 
+          preload="auto" // Ensures it starts fetching metadata immediately
+          style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', zIndex: 0 }}
+        >
           <source src={videoSrc} type="video/mp4" />
         </video>
       ) : (
-        <Image src={imageSrc} alt={imageAlt} fill priority style={{ objectFit: 'cover', zIndex: 0 }} />
+        <Image 
+          src={imageSrc} 
+          alt={imageAlt} 
+          fill 
+          priority={priority} // Tells Next.js to preload this
+          fetchPriority={priority ? "high" : "auto"} // Browser-level instruction
+          style={{ objectFit: 'cover', zIndex: 0 }} 
+        />
       )}
 
       {showOverlay && (

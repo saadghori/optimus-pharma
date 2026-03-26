@@ -50,7 +50,7 @@ const Home = () => {
         <title>Optimus Laboratories - Your Trusted Partner in Ophthalmic Medicine</title>
       </Head>
 
-      {/* Hero Section with Video and Poster */}
+      {/* Hero Section - Priority set to true for fastest load */}
       <Hero
         videoSrc="/OptimusHomepageVid.mp4" 
         imageSrc="/DJI_0157-2.jpg"
@@ -65,6 +65,7 @@ const Home = () => {
         buttonText="LEARN MORE"
         overlayOpacity={0.69}
         showOverlay={true}
+        priority={true} 
       />
 
       <ImageTextSection
@@ -84,7 +85,7 @@ const Home = () => {
         text="We offer a variety of eye care solutions, from anti-inflammatory drops to advanced lubricants, each designed to support healthy vision and patient comfort."
         linkUrl="/products/domestic/ophthalmic/eye-drops"
         linkText="Explore >"
-        carouselHeight="620px"        
+        carouselHeight="620px"         
         carouselHeightMobile="435px"
       />
 
@@ -105,6 +106,7 @@ const Home = () => {
               width={120}
               height={80}
               className="img-fluid img-partner"
+              loading="lazy"
             />
           </Col>
           <Col xs={6} md={2} className="text-center">
@@ -114,6 +116,7 @@ const Home = () => {
               width={120}
               height={80}
               className="img-fluid img-partner"
+              loading="lazy"
             />
           </Col>
           <Col xs={6} md={2} className="text-center">
@@ -123,6 +126,7 @@ const Home = () => {
               width={120}
               height={80}
               className="img-fluid img-partner"
+              loading="lazy"
             />
           </Col>
           <Col xs={6} md={2} className="text-center">
@@ -132,6 +136,7 @@ const Home = () => {
               width={120}
               height={80}
               className="img-fluid img-partner"
+              loading="lazy"
             />
           </Col>
           <Col xs={6} md={2} className="text-center">
@@ -141,6 +146,7 @@ const Home = () => {
               width={120}
               height={80}
               className="img-fluid img-partner"
+              loading="lazy"
             />
           </Col>
         </Row>
