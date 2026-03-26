@@ -60,9 +60,9 @@ export default function Footer() {
             <h4 className={styles.heading}>Contact Us</h4>
             <div className={styles.headOffice}>
               <p>Optimus Laboratories</p>
-              <p>Plot No.62, Bhalwal Industrial Estate, Bhalwal, District Sargodha, Pakistan</p>
+              <p>Plot No. 62, Bhalwal Industrial Estate, Bhalwal, District Sargodha, Pakistan</p>
               <p>Tel: +92 321 5182261</p>
-              <p>E-mail: mhsindhu@optimuslaboratories.com</p>
+              <p>Email: mhsindhu@optimuslaboratories.com</p>
               <p>Head Office: 259, F/1-Block, Wapda Town, Lahore, Pakistan</p>
             </div>
           </Col>
@@ -70,7 +70,7 @@ export default function Footer() {
           {/* Group Companies Column */}
           <Col md={3}>
             <Nav className="flex-column">
-              <h4 className={styles.heading}>Group</h4>
+              <h4 className={styles.heading}>Optimus Group</h4>
               <Nav.Link
                 href="https://optimuspharma.com.pk/"
                 target="_blank"
@@ -96,7 +96,7 @@ export default function Footer() {
               className="text-muted"
               style={{ fontSize: '12px', textAlign: 'left', display: 'block' }}
             >
-              © 2025 Optimus Laboratories (Pvt.) Ltd. All rights reserved
+              © 2025 Optimus Laboratories (Pvt.) Ltd. All rights reserved.
             </small>
           </Col>
         </Row>

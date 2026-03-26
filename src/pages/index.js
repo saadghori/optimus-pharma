@@ -72,7 +72,7 @@ const Home = () => {
         imageSrc="/DSC07699-2.jpg"
         imageAlt="About Optimus Pharma"
         heading="Who We Are"
-        text={<>At Optimus, we care about your eye and ENT health. We aim to help people around the world see better and feel better by offering trusted solutions for everyday eye, ear, and nasal care needs. With over 30 years of experience in ophthalmology through our parent company, Optimus Pharma, and the support of a diverse network of highly qualified eyecare professionals, we stay at the forefront of new developments in vision care.<br /><br />Born from the legacy of the Optimus Group, Optimus Laboratories represents our latest leap forward. Located in Punjab, Pakistan, our state-of-the-art manufacturing facility is dedicated to producing high-quality pharmaceutical solutions. Optimus Laboratories offers a wide range of products. From precision-engineered eye drops to advanced nasal sprays, we are bringing the gift of health to both the Pakistani market and the world.</>}      />
+        text={<>At Optimus, we care about your eye and ENT health. We aim to help people around the world see better and feel better by offering trusted solutions for everyday eye, ear, and nasal care needs. With over 30 years of experience in ophthalmology through our parent company, Optimus Pharma, and the support of a diverse network of highly qualified eyecare professionals, we stay at the forefront of new developments in vision and ENT care.<br /><br />Born from the legacy of the Optimus Group, Optimus Laboratories represents our latest leap forward. Located in Punjab, Pakistan, our state-of-the-art manufacturing facility is dedicated to producing high-quality pharmaceutical solutions. Optimus Laboratories offers a wide range of products. From precision-engineered eye drops to advanced nasal sprays, we are bringing the gift of health to both the Pakistani market and the world.</>}      />
 
       <FeatureCards features={features} />
 
@@ -81,7 +81,7 @@ const Home = () => {
       <CarouselTextSection
         images={productImages}
         heading="Discover Our Range of Ophthalmic & ENT Products"
-        text="We offer a variety of ophthalmic and ENT solutions, from precision-engineered eye drops to advanced nasal sprays, each designed to support patients’ health and comfort."
+        text="We offer a variety of ophthalmic and ENT solutions, from precision-engineered eye drops to advanced nasal sprays, each designed to support our patients’ health and comfort."
         linkUrl="/products/domestic/ophthalmic/eye-drops"
         linkText="Explore Products >"
         carouselHeight="620px"         

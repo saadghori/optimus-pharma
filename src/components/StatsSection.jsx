@@ -12,7 +12,7 @@ const StatsSection = () => {
             </span>
             <span className={styles.boldText}> million</span>
           </h1>
-          <p>Patients treated with our ophthalmic solutions.</p>
+          <p>Patients treated with our ophthalmic and ENT solutions.</p>
         </div>
         <div className={styles.statsRight}>
           <div className={styles.stat}>

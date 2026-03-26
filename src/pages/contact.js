@@ -38,7 +38,7 @@ export default function Contact() {
             style={{
               color: "#ff7823",
               fontWeight: "bold",
-              fontSize: "1.15rem",
+              fontSize: "1.75rem",
             }}
             className="mb-3"
           >
@@ -46,7 +46,7 @@ export default function Contact() {
           </h1>
 
           {/* Introductory Text */}
-          <p className="mb-4" style={{ color: "black", fontSize: "1.4rem" }}>
+          <p className="mb-4" style={{ color: "black", fontSize: "1.1rem" }}>
             Thank you for your interest in Optimus Laboratories. Please note, fields
             marked with an asterisk (*) are required.
           </p>
@@ -98,7 +98,7 @@ export default function Contact() {
                   }}
                 >
                   <li style={{ marginBottom: "0.3rem" }}>
-                    Plot No.62, Bhalwal Industrial Estate, Bhalwal, District Sargodha, Pakistan
+                    Plot No. 62, Bhalwal Industrial Estate, Bhalwal, District Sargodha, Pakistan
                   </li>
                   <li style={{ marginBottom: "0.3rem" }}>
                     Telephone: +92 321 5182261

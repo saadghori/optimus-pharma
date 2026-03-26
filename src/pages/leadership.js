@@ -37,14 +37,14 @@ export default function Leadership() {
         >
           {/* Page Title */}
           <h1
-            style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.15rem" }}
+            style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.75rem" }}
             className="mb-3"
           >
             Leadership
           </h1>
 
           {/* Introductory Text */}
-          <p className="mb-4" style={{ color: "black", fontSize: "1.4rem" }}>
+          <p className="mb-4" style={{ color: "black", fontSize: "1.1rem" }}>
             At Optimus Laboratories, our leadership team is driven by a shared vision of innovation, excellence, and commitment to quality. With extensive expertise in the pharmaceutical industry, our leaders ensure strategic growth, operational efficiency, and groundbreaking advancements in ophthalmic and ENT solutions.
           </p>
 
@@ -53,7 +53,7 @@ export default function Leadership() {
             imageSrc="/hamid-sindhu.png"
             designation="Founder & Chief Executive Officer"
             name="Muhammad Hamid"
-            description="Muhammad Hamid’s journey in healthcare began on the frontlines of the ophthalmology industry, where he built the foundation of knowledge, trust, and dedication that would define his career. His path led him to work with global leaders in ophthalmology, where he earned consistent recognition for his hard work and performance and grew through leadership roles spanning product launches and business development. He joined hands with trusted friends nd partners to found the Optimus Group — growing it from a pharmaceutical marketing venture into a fully licensed manufacturing company. Today, he leads Optimus with a steadfast commitment to delivering world-class healthcare solutions to the patients who need them most."
+            description="Muhammad Hamid’s journey in healthcare began on the frontlines of the ophthalmology industry, where he built the foundation of knowledge, trust, and dedication that would define his career. His path led him to work with global leaders in ophthalmology, where he earned consistent recognition for his hard work and performance, and grew through leadership roles spanning product launches and business development. He joined hands with trusted friends and partners to found the Optimus Group — growing it from a pharmaceutical marketing venture into a fully licensed manufacturing company. Today, he leads Optimus with a steadfast commitment to delivering world-class healthcare solutions to the patients who need them most."
             imagePosition="left"
           />
 
@@ -61,7 +61,7 @@ export default function Leadership() {
             imageSrc="/Gulzar.jpeg"
             designation="Chief Financial Officer"
             name="Gulzar Ahmed Bajwa"
-            description="With a deep commitment to financial integrity and corporate governance, Gulzar Ahmed Bajwa oversees the fiscal health of the Optimus Group. His strategic oversight ensures that the company’s resources are managed strategically and ethically, enabling us to maintain high standards of quality and innovation."
+            description="With a deep commitment to financial integrity and corporate governance, Gulzar Ahmed Bajwa oversees the fiscal health of the Optimus Group. His oversight ensures that the company’s resources are managed strategically and ethically, enabling us to maintain high standards of quality and innovation."
             imagePosition="right"
           />
 
