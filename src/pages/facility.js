@@ -9,8 +9,7 @@ export default function Facility() {
   const galleryImages = [
     "/factory/gallery/1.jpg", "/factory/gallery/2.jpg", "/factory/gallery/3.jpg",
     "/factory/gallery/4.jpg", "/factory/gallery/5.jpg", "/factory/gallery/6.jpg",
-    "/factory/gallery/7.jpg", "/factory/gallery/9.jpg", "/factory/gallery/12.jpg",
-    "/factory/gallery/13.jpg", "/factory/gallery/14.jpg", "/factory/gallery/16.jpg",
+    "/factory/gallery/7.jpg", "/factory/gallery/9.jpg", "/factory/gallery/12.jpg", "/factory/gallery/14.jpg", "/factory/gallery/16.jpg",
     "/factory/gallery/17.jpg", "/factory/gallery/18.jpg", "/factory/gallery/19.jpg",
     "/factory/gallery/20.jpg", "/factory/gallery/21.jpg", "/factory/gallery/22.jpg",
     "/factory/gallery/23.jpg", "/factory/gallery/24.jpg", "/factory/gallery/25.jpg",
@@ -100,7 +99,7 @@ export default function Facility() {
           <div className="row align-items-center my-5">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
               <img
-                src="/factory/DSC07717.jpg"
+                src="/DSC07632.jpg"
                 alt="Sterile Liquid Production"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}

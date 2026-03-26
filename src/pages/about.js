@@ -94,7 +94,7 @@ const About = () => {
 
       <div className={styles.carouselTextSection}>
         <CarouselTextSection
-          images={['/factory/reception2.jpg', '/DSC07715.jpg', '/FZP03176.jpg', '/factory/labeq1.jpg', '/FZP03225.jpg', '/FZP03166.jpg']}
+          images={['/factory/reception2.jpg', '/DSC07715.jpg', '/FZP03176.jpg', '/factory/labeq1.jpg', '/DSC07632.jpg', '/FZP03166.jpg', '/DSC07598.jpg']}
           heading="World-Class Facility for Unmatched Innovation"
           text="Our advanced laboratory and cutting-edge machinery empower breakthrough pharmaceutical research and development. Equipped with the latest state-of-the-art technology, our facility ensures precision, efficiency, and quality at every stage of production."
           linkUrl="/facility"
