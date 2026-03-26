@@ -5,6 +5,8 @@ import { useState, useMemo } from "react";
 export default function Facility() {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
+  // State to track which certificate is currently hovered for inline styling
+  const [hoveredCert, setHoveredCert] = useState(null);
 
   const galleryImages = [
     "/factory/gallery/1.jpg", "/factory/gallery/2.jpg", "/factory/gallery/3.jpg",
@@ -47,7 +49,9 @@ export default function Facility() {
     color: "#ff7823",
     fontWeight: "bold",
     fontSize: "1.25rem",
-    marginBottom: "0.5rem"
+    marginBottom: "0.5rem",
+    display: "inline-block",
+    transition: "all 0.2s ease-in-out"
   };
 
   return (
@@ -204,7 +208,6 @@ export default function Facility() {
             </Carousel>
           </div>
 
-          {/* New Certifications & Memberships Section */}
           <div className="py-5 my-5">
             <h2 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "2.2rem", textAlign: "center", marginBottom: "3rem" }}>
               Certifications & Compliance
@@ -212,25 +215,63 @@ export default function Facility() {
             <Row className="g-4 mb-5">
               <Col md={3}>
                 <div style={certStyle}>
-                  <div style={certTitleStyle}>GMP</div>
+                  <div style={certTitleStyle}>
+                    GMP
+                  </div>
                   <p className="mb-0">Good Manufacturing Practice Compliant Facility</p>
                 </div>
               </Col>
               <Col md={3}>
                 <div style={certStyle}>
-                  <div style={certTitleStyle}>ISO 9001:2015</div>
+                  <div 
+                    style={{
+                      ...certTitleStyle,
+                      cursor: "pointer",
+                      textDecoration: hoveredCert === "9001" ? "underline" : "none",
+                      transform: hoveredCert === "9001" ? "scale(1.05)" : "scale(1)"
+                    }}
+                    onMouseEnter={() => setHoveredCert("9001")}
+                    onMouseLeave={() => setHoveredCert(null)}
+                    onClick={() => handleImageClick("/9001.jpeg")}
+                  >
+                    ISO 9001:2015
+                  </div>
                   <p className="mb-0">Quality Management System (QMS)</p>
                 </div>
               </Col>
               <Col md={3}>
                 <div style={certStyle}>
-                  <div style={certTitleStyle}>ISO 14001:2015</div>
+                  <div 
+                    style={{
+                      ...certTitleStyle,
+                      cursor: "pointer",
+                      textDecoration: hoveredCert === "14001" ? "underline" : "none",
+                      transform: hoveredCert === "14001" ? "scale(1.05)" : "scale(1)"
+                    }}
+                    onMouseEnter={() => setHoveredCert("14001")}
+                    onMouseLeave={() => setHoveredCert(null)}
+                    onClick={() => handleImageClick("/14001.jpeg")}
+                  >
+                    ISO 14001:2015
+                  </div>
                   <p className="mb-0">Environmental Management System (EMS)</p>
                 </div>
               </Col>
               <Col md={3}>
                 <div style={certStyle}>
-                  <div style={certTitleStyle}>ISO 45001:2018</div>
+                  <div 
+                    style={{
+                      ...certTitleStyle,
+                      cursor: "pointer",
+                      textDecoration: hoveredCert === "45001" ? "underline" : "none",
+                      transform: hoveredCert === "45001" ? "scale(1.05)" : "scale(1)"
+                    }}
+                    onMouseEnter={() => setHoveredCert("45001")}
+                    onMouseLeave={() => setHoveredCert(null)}
+                    onClick={() => handleImageClick("/45001.jpeg")}
+                  >
+                    ISO 45001:2018
+                  </div>
                   <p className="mb-0">Occupational Health and Safety Management System (OHSMS)</p>
                 </div>
               </Col>
@@ -242,12 +283,28 @@ export default function Facility() {
             <Row className="g-4 justify-content-center">
               <Col md={4}>
                 <div style={certStyle}>
+                  {/* Wrapper to ensure vertical alignment */}
+                  <div style={{ height: "100px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "1rem" }}>
+                    <img 
+                      src="/lcci.jpeg" 
+                      alt="LCCI Logo" 
+                      style={{ maxWidth: "120px", maxHeight: "100px", height: "auto" }} 
+                    />
+                  </div>
                   <div style={certTitleStyle}>LCCI</div>
                   <p className="mb-0">The Lahore Chamber of Commerce and Industry</p>
                 </div>
               </Col>
               <Col md={4}>
                 <div style={certStyle}>
+                  {/* Wrapper to ensure vertical alignment */}
+                  <div style={{ height: "100px", display: "flex", alignItems: "center", justifyContent: "center", marginBottom: "1rem" }}>
+                    <img 
+                      src="/ppma.jpeg" 
+                      alt="PPMA Logo" 
+                      style={{ maxWidth: "120px", maxHeight: "100px", height: "auto" }} 
+                    />
+                  </div>
                   <div style={certTitleStyle}>PPMA</div>
                   <p className="mb-0">Pakistan Pharmaceutical Manufacturers Association</p>
                 </div>
@@ -255,11 +312,17 @@ export default function Facility() {
             </Row>
           </div>
 
-          <Modal show={showModal} onHide={() => setShowModal(false)} centered size="xl">
-            <Modal.Body className="p-0">
-              <img src={selectedImage} alt="Enlarged" className="img-fluid" style={{ width: "100%" }} />
+          <Modal show={showModal} onHide={() => setShowModal(false)} centered size="lg">
+            <Modal.Body className="p-4 text-center">
+              <img 
+                src={selectedImage} 
+                alt="Enlarged View" 
+                className="img-fluid rounded" 
+                style={{ width: "70%", margin: "0 auto", display: "block" }} 
+              />
             </Modal.Body>
           </Modal>
+
         </Container>
       </div>
     </>
