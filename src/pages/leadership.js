@@ -62,19 +62,11 @@ export default function Leadership() {
           />
 
           <LeaderProfile
-            imageSrc="/sajjad-latif-1.png"
-            designation="Director Planning"
-            name="Sajjad Latif"
-            description="Sajjad Latif spearheads strategic planning, ensuring that Optimus Laboratories remains on the cutting edge of research and development. He focuses on streamlined operations and future-ready processes to expand our global impact."
+            imageSrc="/Gulzar.jpeg"
+            designation="Chief Financial Officer"
+            name="Gulzar Ahmed Bajwa"
+            description="With a deep commitment to financial integrity and corporate governance, Gulzar Ahmed Bajwa oversees the fiscal health of Optimus Laboratories. His strategic oversight ensures that the company’s resources are managed with precision, enabling us to maintain high standards of quality and innovation."
             imagePosition="right"
-          />
-
-          <LeaderProfile
-            imageSrc="/Farooq.png"
-            designation="Director Operations"
-            name="Farooq Azam Khan"
-            description="Farooq Azam Khan oversees day-to-day operations, maintaining a balance between operational efficiency and patient-focused innovation. His hands-on approach drives seamless production and distribution across our network."
-            imagePosition="left"
           />
 
           <LeaderProfile
@@ -82,7 +74,7 @@ export default function Leadership() {
             designation="Director Finance"
             name="Asadullah"
             description="Asadullah ensures the financial health and stability of Optimus Laboratories, leading initiatives that foster sustainable growth. His expertise in fiscal management underpins the company's long-term vision and global reach."
-            imagePosition="right"
+            imagePosition="left"
           />
         </Container>
       </div>
