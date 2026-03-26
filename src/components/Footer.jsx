@@ -18,7 +18,7 @@ export default function Footer() {
                 style={{ maxWidth: '225px', height: 'auto' }}
               />
               <p className={styles.slogan}>
-                Unwavering commitment to quality, innovation, and accessibility.
+                Unwavering commitment to quality, innovation, and accessibility. -&gt; The gift of health
               </p>
             </div>
           </Col>
@@ -36,6 +36,9 @@ export default function Footer() {
               <Link href="/products/domestic/ophthalmic/eye-drops" passHref legacyBehavior>
                 <Nav.Link className={styles.navLink}>Products</Nav.Link>
               </Link>
+              <Link href="/facility" passHref legacyBehavior>
+                <Nav.Link className={styles.navLink}>Facility</Nav.Link>
+              </Link>
               <Link href="/leadership" passHref legacyBehavior>
                 <Nav.Link className={styles.navLink}>Leadership</Nav.Link>
               </Link>
@@ -47,14 +50,13 @@ export default function Footer() {
 
           {/* Contact Column */}
           <Col md={3}>
-            <h4 className={styles.heading}>Contact</h4>
+            <h4 className={styles.heading}>Contact Us</h4>
             <div className={styles.headOffice}>
               <p>Optimus Laboratories</p>
-              <p>259 F/I-Block, Wapda Town, Lahore</p>
-              <p>Cell: +92 321 5182261</p>
-              <p>Tel: +92 42 35186994</p>
-              <p>Fax: +92 42 32212467</p>
-              <p>E-mail: info@optimuslaboratories.com</p>
+              <p>Plot No.62, Bhalwal Industrial Estate, Bhalwal, District Sargodha, Pakistan</p>
+              <p>Tel: +92 321 5182261</p>
+              <p>E-mail: mhsindhu@optimuslaboratories.com</p>
+              <p>Head Office: 259, F/1-Block, Wapda Town, Lahore, Pakistan</p>
             </div>
           </Col>
 
@@ -62,6 +64,14 @@ export default function Footer() {
           <Col md={3}>
             <Nav className="flex-column">
               <h4 className={styles.heading}>Group</h4>
+              <Nav.Link
+                href="https://optimuspharma.com.pk/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className={styles.navLink}
+              >
+                Optimus Pharma ⧉
+              </Nav.Link>
               <Nav.Link
                 href="https://optimusentrepot.com/"
                 target="_blank"
@@ -79,7 +89,7 @@ export default function Footer() {
               className="text-muted"
               style={{ fontSize: '12px', textAlign: 'left', display: 'block' }}
             >
-              © 2025 Optimus Pharma. All rights reserved.
+              © 2025 Optimus Laboratories (Pvt.) Ltd. All rights reserved
             </small>
           </Col>
         </Row>

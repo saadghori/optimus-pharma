@@ -33,7 +33,7 @@ const Home = () => {
       icon: '/medical-report.png',
       altText: 'Medical Report',
       title: 'Proven Patient Effectiveness',
-      description: 'The effectiveness of our medications is validated through real-world patient outcomes, and clinical feedback showing significant improvements in relief and recovery for millions of patients.',
+      description: 'The effectiveness of our products is validated through real-world patient outcomes and clinical feedback showing significant improvements in relief and recovery for patients.',
     }
   ];
 
@@ -54,12 +54,12 @@ const Home = () => {
       <Hero
         videoSrc="/OptimusHomepageVid.mp4" 
         imageSrc="/DJI_0157-2.jpg"
-        heading="Innovating for a Global Vision"
+        heading="The gift of health"
         text={
           <>
             The manufacturing center of excellence for the Optimus Group,
             <br />
-            delivering world-class Ophthalmic and ENT solutions
+            delivering world-class ophthalmic and ENT solutions.
           </>
         }
         buttonText="LEARN MORE"
@@ -72,8 +72,7 @@ const Home = () => {
         imageSrc="/DSC07699-2.jpg"
         imageAlt="About Optimus Pharma"
         heading="Who We Are"
-        text="Born from the legacy of the Optimus Group, Optimus Laboratories represents our latest leap forward. Located in the heart of Lahore, our state-of-the-art manufacturing facility is dedicated to producing high-quality pharmaceutical solutions. From precision-engineered eye drops to advanced nasal sprays, we are bringing the gift of health to both the Pakistani market and the world."
-      />
+        text={<>At Optimus, we care about your eye and ENT health. We aim to help people around the world see better and feel better by offering trusted solutions for everyday eye, ear, and nasal care needs. With over 30 years of experience in ophthalmology through our parent company, Optimus Pharma, and the support of a diverse network of highly qualified eyecare professionals, we stay at the forefront of new developments in vision care.<br /><br />Born from the legacy of the Optimus Group, Optimus Laboratories represents our latest leap forward. Located in Punjab, Pakistan, our state-of-the-art manufacturing facility is dedicated to producing high-quality pharmaceutical solutions. Optimus Laboratories offers a wide range of products. From precision-engineered eye drops to advanced nasal sprays, we are bringing the gift of health to both the Pakistani market and the world.</>}      />
 
       <FeatureCards features={features} />
 
@@ -81,76 +80,20 @@ const Home = () => {
 
       <CarouselTextSection
         images={productImages}
-        heading="Discover Our Range of Ophthalmic Products"
-        text="We offer a variety of eye care solutions, from anti-inflammatory drops to advanced lubricants, each designed to support healthy vision and patient comfort."
+        heading="Discover Our Range of Ophthalmic & ENT Products"
+        text="We offer a variety of ophthalmic and ENT solutions, from precision-engineered eye drops to advanced nasal sprays, each designed to support patients’ health and comfort."
         linkUrl="/products/domestic/ophthalmic/eye-drops"
-        linkText="Explore >"
+        linkText="Explore Products >"
         carouselHeight="620px"         
         carouselHeightMobile="435px"
       />
 
       <AnimatedTextSection
-        heading="We Tirelessly Deliver Accessible, High-Quality Eye Medicine "
-        text="At Optimus Pharma, we work tirelessly to research and develop the highest quality eye medicines, making them accessible to all. Driven by a deep commitment to your vision and well-being, we blend cutting-edge science with genuine care to deliver solutions that transform lives."
+        heading="We Work Tirelessly to Deliver Accessible, High-Quality Solutions"
+        text="Located in Punjab, Pakistan, our state-of-the-art manufacturing facility is dedicated to producing high-quality ophthalmic and ENT pharmaceutical solutions, making them accessible to the Pakistani market. Driven by a deep commitment to your well-being, we blend cutting-edge science with genuine care to deliver medical solutions that transform lives."
+        linkUrl="/facility"
+        linkText="Explore Facility >"
       />
-
-      <Container className="mb-5 pb-4" style={{ overflow: 'hidden' }}>
-        <h2 className="text-center mb-4" style={{ color: '#ff7823' }}>
-          Our Partners
-        </h2>
-        <Row className="justify-content-center align-items-center g-4 mx-0">
-          <Col xs={6} md={2} className="text-center">
-            <Image
-              src="/lens-tech.jpg"
-              alt="Lens Tech"
-              width={120}
-              height={80}
-              className="img-fluid img-partner"
-              loading="lazy"
-            />
-          </Col>
-          <Col xs={6} md={2} className="text-center">
-            <Image
-              src="/miray.jpg"
-              alt="Miray"
-              width={120}
-              height={80}
-              className="img-fluid img-partner"
-              loading="lazy"
-            />
-          </Col>
-          <Col xs={6} md={2} className="text-center">
-            <Image
-              src="/sav-iol.jpg"
-              alt="Sav IOL"
-              width={120}
-              height={80}
-              className="img-fluid img-partner"
-              loading="lazy"
-            />
-          </Col>
-          <Col xs={6} md={2} className="text-center">
-            <Image
-              src="/zaracom.jpg"
-              alt="Zaracom"
-              width={120}
-              height={80}
-              className="img-fluid img-partner"
-              loading="lazy"
-            />
-          </Col>
-          <Col xs={6} md={2} className="text-center">
-            <Image
-              src="/alsanza.jpg"
-              alt="Alsanza"
-              width={120}
-              height={80}
-              className="img-fluid img-partner"
-              loading="lazy"
-            />
-          </Col>
-        </Row>
-      </Container>
 
       <CTABanner />
     </div>

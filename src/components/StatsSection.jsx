@@ -8,7 +8,7 @@ const StatsSection = () => {
         <div className={styles.statsLeft}>
           <h1>
             <span className={styles.highlight}>
-              <AnimatedNumber value={7} decimals={0} />
+              <AnimatedNumber value={10} decimals={0} />
             </span>
             <span className={styles.boldText}> million</span>
           </h1>
@@ -17,25 +17,25 @@ const StatsSection = () => {
         <div className={styles.statsRight}>
           <div className={styles.stat}>
             <h2>
-              <AnimatedNumber value={1.8} suffix="x" decimals={1} duration={1500} />
+              <AnimatedNumber value={1.6} suffix="x" decimals={1} duration={1500} />
             </h2>
             <p>Improved treatment efficiency</p>
           </div>
           <div className={styles.stat}>
             <h2>
-              <AnimatedNumber value={16} suffix="%" duration={1500} />
+              <AnimatedNumber value={34} suffix="%" duration={1500} />
             </h2>
             <p>Growth in pharmaceutical distribution</p>
           </div>
           <div className={styles.stat}>
             <h2>
-              <AnimatedNumber value={1.25} suffix="x" decimals={2} duration={1500} />
+              <AnimatedNumber value={2.1} suffix="x" decimals={1} duration={1500} />
             </h2>
             <p>Expanded patient outreach</p>
           </div>
           <div className={styles.stat}>
             <h2>
-              <AnimatedNumber value={20} suffix="%" duration={1500} />
+              <AnimatedNumber value={28} suffix="%" duration={1500} />
             </h2>
             <p>Enhanced prescription accuracy</p>
           </div>

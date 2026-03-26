@@ -75,9 +75,21 @@ export default function Contact() {
                 }}
               >
                 <h3 style={{ fontWeight: "bold" }}>Head Office</h3>
-                <p style={{ marginBottom: "1rem", fontWeight: "bold" }}>
-                  Optimus Laboratories
-                </p>
+                  <ul
+                    style={{
+                      fontStyle: "normal",
+                      fontSize: "0.9rem",
+                      lineHeight: "1.4",
+                      margin: 0,
+                      paddingLeft: "1.2rem",
+                    }}
+                  >
+                    <li style={{ marginBottom: "0.3rem" }}>
+                      259 F/I-Block, Wapda Town, Lahore, Pakistan
+                    </li>
+                  </ul>
+                
+                <h3 style={{ fontWeight: "bold" }}>Optimus Laboratories</h3>
                 <ul
                   style={{
                     fontStyle: "normal",
@@ -88,19 +100,13 @@ export default function Contact() {
                   }}
                 >
                   <li style={{ marginBottom: "0.3rem" }}>
-                    259 F/I-Block, Wapda Town, Lahore
+                    Plot No.62, Bhalwal Industrial Estate, Bhalwal, District Sargodha, Pakistan
                   </li>
                   <li style={{ marginBottom: "0.3rem" }}>
-                    Tel: +92-42-35186994
+                    Telephone: +92 321 5182261
                   </li>
                   <li style={{ marginBottom: "0.3rem" }}>
-                    Cell: +92 321 5182261
-                  </li>
-                  <li style={{ marginBottom: "0.3rem" }}>
-                    Fax: +92-42-32212467
-                  </li>
-                  <li style={{ marginBottom: "0.3rem" }}>
-                    Email: info@optimuslaboratories.com
+                    Email: mhsindhu@optimuslaboratories.com
                   </li>
                 </ul>
               </div>

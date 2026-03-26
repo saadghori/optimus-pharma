@@ -45,8 +45,8 @@ const About = () => {
       <Hero
         imageSrc="/DJI_0159.jpg"
         imageAlt="Optimus Factory"
-        heading="Our Passion. Your Health."
-        text="At Optimus Laboratories we provide pharmaceutical solutions that make a lasting impact"
+        heading="Your health is our passion"
+        text="At Optimus Laboratories, we provide pharmaceutical solutions that make a lasting impact."
         buttonText="DOWNLOAD CATALOGUE"
         buttonLink="/Optimus-Catalogue.pdf" 
         isDownload={true}
@@ -57,16 +57,29 @@ const About = () => {
       />
 
       <ImageTextSection
-        imageSrc="/working-guy.jpg"
+        imageSrc="/ourstory.jpg"
         imageAlt="Our Story"
         heading="Our Story"
-        text="The Optimus journey began in 2013, when a group of visionary friends united to redefine healthcare in Pakistan. While Optimus Pharma focused on specialized pharmaceuticals and Optimus Entrepôt pioneered optical device imports, the vision continued to grow. Finally, in 2025, that vision expanded into Optimus Laboratories. As the manufacturing arm of the group, we are built on a foundation of experience and deep market insight, merging our expertise to turn accessible healthcare into reality."
+        text={<>Every meaningful journey begins with a small step. The Optimus journey began in 2013, when a group of visionary friends united to redefine healthcare in Pakistan. Putting together a trusted team of qualified professionals, we started Optimus Pharma, a small pharmaceutical marketing venture. Soon after, it became apparent that to truly make a lasting contribution to healthcare, we needed to go beyond marketing.<br/><br/>We set our sights on bridging the gap between global medical innovation and the Pakistani patient. By forging partnerships with leading international pharmaceutical companies, we began our next project, Optimus Entrepôt, to begin introducing world-class treatments in Pakistan, which were previously out of reach for millions. But we learned that providing access was only half the answer.<br/><br/>To create a truly lasting impact, we took our most ambitious step yet — establishing our own manufacturing facility. By producing these globally-proven solutions on home soil, we could ensure that cutting-edge healthcare was not just available in Pakistan, but affordable, sustainable, and built to serve every patient who needed it. With this mission in mind, in 2025, Optimus Laboratories (Pvt.) Ltd. opened its doors.<br/><br/>What started as a vision gradually turned into reality through patience, resilience, and the unwavering trust of our partners. As the manufacturing arm of the group, we are built on a foundation of experience and deep market insight. Today, Optimus Laboratories stands as a symbol of determination, collaboration, and a passion for healthcare. As we move forward, our commitment remains clear: to deliver accessible, high-quality pharmaceutical products to improve the quality of life of our patients.
+</>}
       />
 
       <div className={styles.missionSection}>
         <h2>Our Mission</h2>
         <p>
-          To manufacture and deliver life-changing pharmaceutical products that bridge the gap between quality and affordability, ensuring that the gift of sight and health is accessible to everyone, everywhere.
+          To manufacture and deliver trusted, high-quality pharmaceutical products that support eye, ear, and nose health for all, bridging the gap between quality and affordability to ensure that the gift of health is accessible to everyone, everywhere.
+        </p>
+        <br/>
+        <br/>
+        <h2>Our Vision</h2>
+        <p>
+          To be a trusted partner in everyday health care, known for delivering reliable life-changing pharmaceutical solutions that meet real-world eye and ENT needs.
+        </p>
+        <br/>
+        <br/>
+        <h2>Core Values</h2>
+        <p>
+          We strive to continue improving and expanding our efforts through rigorous research, innovation, and the adoption of advanced global technologies.
         </p>
       </div>
 
@@ -80,10 +93,10 @@ const About = () => {
       <div className={styles.carouselTextSection}>
         <CarouselTextSection
           images={['/factory/reception2.jpg', '/DSC07715.jpg', '/FZP03176.jpg', '/factory/labeq1.jpg', '/FZP03225.jpg', '/FZP03166.jpg']}
-          heading="World-Class Facilities for Unmatched Innovation"
-          text="Our advanced laboratories and cutting-edge machinery empower breakthrough pharmaceutical research and development. Equipped with the latest technology, our facilities ensure precision, efficiency, and quality at every stage of production."
+          heading="World-Class Facility for Unmatched Innovation"
+          text="Our advanced laboratory and cutting-edge machinery empower breakthrough pharmaceutical research and development. Equipped with the latest state-of-the-art technology, our facility ensures precision, efficiency, and quality at every stage of production."
           linkUrl="/facility"
-          linkText="Learn more >"
+          linkText="Explore Our Facility >"
         />
       </div>
 

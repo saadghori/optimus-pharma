@@ -63,16 +63,12 @@ export default function Facility() {
         />
 
         <Container className="py-5 px-4" style={{ position: "relative", zIndex: 2 }}>
-          <h1 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "2.5rem", textAlign: "center" }} className="my-5">
-            State-of-the-Art Laboratories
+          <h1 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "2.75rem", textAlign: "center" }} className="my-5">
+            Optimus Laboratories (Pvt.) Ltd.
           </h1>
 
-          <h2 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "2rem", textAlign: "center" }} className="mb-4">
-            Precision Engineering Meets Pharmaceutical Purity
-          </h2>
-
-          <p style={{ fontSize: "1.4rem", textAlign: "center", maxWidth: "950px", margin: "0 auto 5rem" }}>
-            At Optimus Laboratories, we don’t just manufacture; we craft healthcare solutions with absolute precision.
+          <p style={{ fontSize: "1.65rem", textAlign: "center", maxWidth: "950px", margin: "0 auto 5rem" }}>
+            Precision engineering meets pharmaceutical purity
           </p>
 
           <div style={{ backgroundColor: "#ff7823", padding: "3rem", marginBottom: "6rem", marginLeft: "calc(-50vw + 50%)", marginRight: "calc(-50vw + 50%)" }}>
