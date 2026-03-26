@@ -46,7 +46,9 @@ const About = () => {
         imageSrc="/DJI_0159.jpg"
         imageAlt="Optimus Factory"
         heading="Your health is our passion"
-        text="At Optimus Laboratories, we provide pharmaceutical solutions that make a lasting impact."
+        text={<>At Optimus Laboratories, we provide pharmaceutical solutions
+    <br />
+    that make a lasting impact.</>}
         buttonText="DOWNLOAD CATALOGUE"
         buttonLink="/Optimus-Catalogue.pdf" 
         isDownload={true}
