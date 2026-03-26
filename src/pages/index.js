@@ -38,10 +38,10 @@ const Home = () => {
   ];
 
   const productImages = [
-    '/products/Catacrom.jpg',
-    '/products/Opticon-A.jpg',
-    '/products/Optibrex.jpg',
-    '/products/Optibrex-D.jpg'
+    '/products/Catacrom.jpeg',
+    '/products/Opticon-A.jpeg',
+    '/products/Optibrex.jpeg',
+    '/products/Optibrex-D.jpeg'
   ];
 
   return (

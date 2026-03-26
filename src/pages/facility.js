@@ -1,27 +1,34 @@
 import Head from "next/head";
 import { Container, Carousel, Modal } from "react-bootstrap";
-import { useState } from "react";
+import { useState, useMemo } from "react";
 
 export default function Facility() {
   const [showModal, setShowModal] = useState(false);
   const [selectedImage, setSelectedImage] = useState("");
 
   const galleryImages = [
-    "/factory/gallery/1.jpeg",
-    "/factory/gallery/2.jpeg",
-    "/factory/gallery/3.jpeg",
-    "/factory/gallery/4.jpeg",
-    "/factory/gallery/5.jpeg",
-    "/factory/gallery/6.jpeg",
-    "/factory/gallery/7.jpeg",
-    "/factory/gallery/9.jpeg",
-    "/factory/gallery/12.jpeg",
-    "/factory/gallery/13.jpeg",
-    "/factory/gallery/14.jpeg",
-    "/factory/gallery/16.jpeg",
-    "/factory/gallery/17.jpeg",
-    "/factory/gallery/18.jpeg",
+    "/factory/gallery/1.jpg", "/factory/gallery/2.jpg", "/factory/gallery/3.jpg",
+    "/factory/gallery/4.jpg", "/factory/gallery/5.jpg", "/factory/gallery/6.jpg",
+    "/factory/gallery/7.jpg", "/factory/gallery/9.jpg", "/factory/gallery/12.jpg",
+    "/factory/gallery/13.jpg", "/factory/gallery/14.jpg", "/factory/gallery/16.jpg",
+    "/factory/gallery/17.jpg", "/factory/gallery/18.jpg", "/factory/gallery/19.jpg",
+    "/factory/gallery/20.jpg", "/factory/gallery/21.jpg", "/factory/gallery/22.jpg",
+    "/factory/gallery/23.jpg", "/factory/gallery/24.jpg", "/factory/gallery/25.jpg",
+    "/factory/gallery/26.jpg", "/factory/gallery/27.jpg", "/factory/gallery/28.jpg", "/factory/gallery/30.jpg", "/factory/gallery/31.jpg",
+    "/factory/gallery/32.jpg", "/factory/gallery/33.jpg", "/factory/gallery/34.jpg",
+    "/factory/gallery/35.jpg", "/factory/gallery/36.jpg", "/factory/gallery/37.jpg",
+    "/factory/gallery/38.jpg", "/factory/gallery/39.jpg", "/factory/gallery/40.jpg",
+    "/factory/gallery/41.jpg",
   ];
+
+  // Logic to split the 41 images into chunks of 3 for the carousel slides
+  const chunkedImages = useMemo(() => {
+    const chunks = [];
+    for (let i = 0; i < galleryImages.length; i += 3) {
+      chunks.push(galleryImages.slice(i, i + 3));
+    }
+    return chunks;
+  }, [galleryImages]);
 
   const handleImageClick = (src) => {
     setSelectedImage(src);
@@ -94,90 +101,86 @@ export default function Facility() {
           </div>
 
           {/* Highlight 1: Sterile Liquid Production */}
-            <div className="row align-items-center my-5">
+          <div className="row align-items-center my-5">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
-                <img
-                src="/factory/IMG_1794.jpeg"
+              <img
+                src="/factory/DSC07717.jpg"
                 alt="Sterile Liquid Production"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-                />
+              />
             </div>
-            {/* Added mt-4 for mobile, mt-lg-0 to remove it on desktop */}
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0"> 
-                <div className="px-lg-5">
+              <div className="px-lg-5">
                 <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Sterile Liquid Production</h3>
                 <p style={{ fontSize: "1.2rem", lineHeight: "1.7" }}>
-                    Our facility utilizes advanced Rotary and Linear Filling Lines encased in Laminar Air Flow (LAF) systems. This technology creates a particle-free environment, ensuring that every bottle of eye drops and nasal spray is filled under strict aseptic conditions.
+                  Our facility utilizes advanced Rotary and Linear Filling Lines encased in Laminar Air Flow (LAF) systems. This technology creates a particle-free environment, ensuring that every bottle of eye drops and nasal spray is filled under strict aseptic conditions.
                 </p>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
 
-            {/* Highlight 2: Specialized Ointment & Gel Processing */}
-            <div className="row align-items-center my-5 flex-lg-row-reverse">
+          {/* Highlight 2: Specialized Ointment & Gel Processing */}
+          <div className="row align-items-center my-5 flex-lg-row-reverse">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
-                <img
-                src="/factory/IMG_1778.jpeg"
+              <img
+                src="/factory/DSC07727.jpg"
                 alt="Specialized Ointment & Gel Processing"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-                />
+              />
             </div>
-            {/* Added mt-4 for mobile, mt-lg-0 to remove it on desktop */}
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
-                <div className="px-lg-5">
+              <div className="px-lg-5">
                 <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Specialized Ointment & Gel Processing</h3>
                 <p style={{ fontSize: "1.2rem", lineHeight: "1.7" }}>
-                    To support our diverse product range, we employ industrial-grade Cream & Ointment Mixers. These specialized vessels allow for the precise homogenization of semi-solid formulations, guaranteeing consistent texture and efficacy in our eye gels and ointments.
+                  To support our diverse product range, we employ industrial-grade Cream & Ointment Mixers. These specialized vessels allow for the precise homogenization of semi-solid formulations, guaranteeing consistent texture and efficacy in our eye gels and ointments.
                 </p>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
 
-            {/* Highlight 3: Controlled Cleanroom Environment */}
-            <div className="row align-items-center my-5">
+          {/* Highlight 3: Advanced Distillation Technology */}
+          <div className="row align-items-center my-5">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
-                <img
-                src="/factory/IMG_1830.jpeg"
-                alt="Controlled Cleanroom Environment"
+              <img
+                src="/factory/FZP03187.jpg"
+                alt="Advanced Distillation Technology"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-                />
+              />
             </div>
-            {/* Added mt-4 for mobile, mt-lg-0 to remove it on desktop */}
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
-                <div className="px-lg-5">
-                <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Controlled Cleanroom Environment</h3>
+              <div className="px-lg-5">
+                <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Advanced Distillation Technology</h3>
                 <p style={{ fontSize: "1.2rem", lineHeight: "1.7" }}>
-                    Hygiene is engineered into our infrastructure. From seamless epoxy flooring to dedicated personnel airlocks and gowning areas, every square foot is designed to prevent contamination. Our material handling utilizes interlocking pass-through boxes, ensuring safe transfer between classified zones without compromising air quality.
+                  Our facility features a dedicated Double Distillation Plant with a 200 Ltr/hr capacity. This multi-column system utilizes thermodynamic principles to eliminate endotoxins and volatile impurities, providing a continuous supply of high-purity sterile water.
                 </p>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
 
-            {/* Highlight 4: Traceability & Packaging */}
-            <div className="row align-items-center my-5 flex-lg-row-reverse">
+          {/* Highlight 4: Rigorous Quality Testing */}
+          <div className="row align-items-center my-5 flex-lg-row-reverse">
             <div className="col-lg-6 col-md-12 col-sm-12 text-center">
-                <img
-                src="/factory/IMG_1800.jpeg"
-                alt="Traceability & Packaging"
+              <img
+                src="/factory/DSC07779.jpg"
+                alt="Rigorous Quality Testing"
                 className="img-fluid rounded shadow"
                 style={{ width: "85%", height: "auto", objectFit: "cover" }}
-                />
+              />
             </div>
-            {/* Added mt-4 for mobile, mt-lg-0 to remove it on desktop */}
             <div className="col-lg-6 col-md-12 col-sm-12 mt-5 mt-lg-0">
-                <div className="px-lg-5">
-                <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Traceability & Packaging</h3>
+              <div className="px-lg-5">
+                <h3 style={{ color: "#ff7823", fontWeight: "bold", fontSize: "1.8rem" }}>Rigorous Quality Testing</h3>
                 <p style={{ fontSize: "1.2rem", lineHeight: "1.7" }}>
-                    Quality extends to the final package. Our finishing lines feature dedicated Laser Printing Rooms for indelible batch coding and expiry marking, ensuring complete traceability and compliance for both domestic and export markets.
+                  Safety is our priority. We utilize advanced HPLC (High-Performance Liquid Chromatography) systems to verify chemical integrity, ensuring that every formulation meets the highest safety profiles for both domestic and global markets.
                 </p>
-                </div>
+              </div>
             </div>
-            </div>
+          </div>
 
-          {/* Gallery Section - Styled like Mission section */}
+          {/* Gallery Section */}
           <div style={{ backgroundColor: "#ff7823", padding: "3rem", marginLeft: "calc(-50vw + 50%)", marginRight: "calc(-50vw + 50%)" }}>
             <h2 style={{ color: "white", textAlign: "center", fontSize: "2rem", fontWeight: "bold", marginBottom: "1.5rem" }}>
               Gallery
@@ -186,16 +189,16 @@ export default function Facility() {
               Explore more views of our cutting-edge pharmaceutical manufacturing facility.
             </p>
 
-            {/* Carousel showing 3 images at a time */}
+            {/* Dynamic Carousel showing all 41 images */}
             <Carousel indicators={false} interval={null} wrap={true}>
-              {[0, 3, 6, 9, 12].map((startIndex) => (
-                <Carousel.Item key={startIndex}>
+              {chunkedImages.map((imageGroup, slideIndex) => (
+                <Carousel.Item key={slideIndex}>
                   <div className="row g-4 justify-content-center">
-                    {galleryImages.slice(startIndex, startIndex + 3).map((src, idx) => (
-                      <div key={idx} className="col-lg-4 col-md-4 col-sm-6">
+                    {imageGroup.map((src, imgIndex) => (
+                      <div key={imgIndex} className="col-lg-4 col-md-4 col-sm-6">
                         <img
                           src={src}
-                          alt={`Gallery ${startIndex + idx + 1}`}
+                          alt={`Gallery item ${slideIndex * 3 + imgIndex + 1}`}
                           className="img-fluid rounded shadow"
                           style={{ height: "280px", width: "100%", objectFit: "cover", cursor: "pointer" }}
                           onClick={() => handleImageClick(src)}
