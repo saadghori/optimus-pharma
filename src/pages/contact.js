@@ -114,7 +114,7 @@ export default function Contact() {
               {/* Image placed below the orange container */}
               <div style={{ marginTop: "1.5rem", textAlign: "center" }}>
                 <img
-                  src="/factory/conference.jpg"
+                  src="/World.png"
                   alt="Conference at Head Office"
                   style={{ maxWidth: "100%", borderRadius: "6px" }}
                 />
