@@ -53,7 +53,7 @@ export default function Leadership() {
             imageSrc="/hamid-sindhu.png"
             designation="Founder & Chief Executive Officer"
             name="Muhammad Hamid"
-            description="With years of experience in pioneering large-scale pharmaceutical projects, Muhammad Hamid is committed to driving innovation at Optimus Laboratories. His visionary leadership ensures that each product meets the highest standards of quality and efficacy."
+            description="Muhammad Hamid’s journey in healthcare began on the frontlines of the ophthalmology industry, where he built the foundation of knowledge, trust, and dedication that would define his career. His path led him to work with global leaders in ophthalmology, where he earned consistent recognition for his hard work and performance and grew through leadership roles spanning product launches and business development. He joined hands with trusted friends nd partners to found the Optimus Group — growing it from a pharmaceutical marketing venture into a fully licensed manufacturing company. Today, he leads Optimus with a steadfast commitment to delivering world-class healthcare solutions to the patients who need them most."
             imagePosition="left"
           />
 
@@ -61,7 +61,7 @@ export default function Leadership() {
             imageSrc="/Gulzar.jpeg"
             designation="Chief Financial Officer"
             name="Gulzar Ahmed Bajwa"
-            description="With a deep commitment to financial integrity and corporate governance, Gulzar Ahmed Bajwa oversees the fiscal health of Optimus Laboratories. His strategic oversight ensures that the company’s resources are managed with precision, enabling us to maintain high standards of quality and innovation."
+            description="With a deep commitment to financial integrity and corporate governance, Gulzar Ahmed Bajwa oversees the fiscal health of the Optimus Group. His strategic oversight ensures that the company’s resources are managed strategically and ethically, enabling us to maintain high standards of quality and innovation."
             imagePosition="right"
           />
 
@@ -69,7 +69,7 @@ export default function Leadership() {
             imageSrc="/Asadullah.png"
             designation="Director Finance"
             name="Asadullah"
-            description="Asadullah ensures the financial health and stability of Optimus Laboratories, leading initiatives that foster sustainable growth. His expertise in fiscal management underpins the company's long-term vision and global reach."
+            description="Asadullah ensures the smooth operation and expansion of the financial department, leading initiatives that foster sustainable growth. His expertise in fiscal management underpins the company's long-term vision and global reach."
             imagePosition="left"
           />
         </Container>

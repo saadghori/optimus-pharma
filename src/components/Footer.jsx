@@ -17,8 +17,15 @@ export default function Footer() {
                 className="mb-3"
                 style={{ maxWidth: '225px', height: 'auto' }}
               />
-              <p className={styles.slogan}>
-                Unwavering commitment to quality, innovation, and accessibility. -&gt; The gift of health
+              <p 
+                className={styles.slogan} 
+                style={{ 
+                  fontSize: '0.96rem', // Makes it bigger
+                  fontWeight: '400',  // Adds a professional weight
+                  margin: 0           // Removes default paragraph spacing
+                }}
+              >
+                The gift of health.
               </p>
             </div>
           </Col>
