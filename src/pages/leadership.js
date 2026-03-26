@@ -45,17 +45,13 @@ export default function Leadership() {
 
           {/* Introductory Text */}
           <p className="mb-4" style={{ color: "black", fontSize: "1.4rem" }}>
-            At Optimus Laboratories, our leadership team is driven by a shared vision of
-            innovation, excellence, and commitment to quality. With extensive
-            expertise in the pharmaceutical industry, our leaders ensure strategic
-            growth, operational efficiency, and groundbreaking advancements in
-            ophthalmic solutions.
+            At Optimus Laboratories, our leadership team is driven by a shared vision of innovation, excellence, and commitment to quality. With extensive expertise in the pharmaceutical industry, our leaders ensure strategic growth, operational efficiency, and groundbreaking advancements in ophthalmic and ENT solutions.
           </p>
 
           {/* Leader Profiles */}
           <LeaderProfile
             imageSrc="/hamid-sindhu.png"
-            designation="CEO / Founder"
+            designation="Founder & Chief Executive Officer"
             name="Muhammad Hamid"
             description="With years of experience in pioneering large-scale pharmaceutical projects, Muhammad Hamid is committed to driving innovation at Optimus Laboratories. His visionary leadership ensures that each product meets the highest standards of quality and efficacy."
             imagePosition="left"
