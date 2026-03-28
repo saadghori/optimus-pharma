@@ -9,6 +9,10 @@ const ContactForm = () => {
     message: '',
   });
   const [responseMessage, setResponseMessage] = useState('');
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  // REPLACE THIS WITH YOUR ACTUAL ACCESS KEY FROM WEB3FORMS
+  const WEB3FORMS_ACCESS_KEY = "53c4f1ad-d3af-452f-96ca-a9da14d5114a";
 
   const handleChange = (e) => {
     setFormData(prev => ({
@@ -19,21 +23,39 @@ const ContactForm = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    setIsSubmitting(true);
+    setResponseMessage('');
+
     try {
-      const res = await fetch('https://pharma-backend-f278.onrender.com/api/contact', {
+      // Prepare the payload for Web3Forms
+      const submissionData = {
+        ...formData,
+        access_key: WEB3FORMS_ACCESS_KEY,
+        subject: `New Contact Form Submission from ${formData.name}`,
+        from_name: "Optimus Website"
+      };
+
+      const res = await fetch('https://api.web3forms.com/submit', {
         method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(formData),
+        headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify(submissionData),
       });
+
       const data = await res.json();
-      if (res.ok) {
-        setResponseMessage(data.message);
+
+      if (data.success) {
+        setResponseMessage("Thank you for reaching out. We have received your message and will get in touch soon.");
         setFormData({ name: '', email: '', phone: '', message: '' }); // Reset form
       } else {
-        setResponseMessage(data.message || 'Submission failed');
+        setResponseMessage(data.message || 'Submission failed. Please try again.');
       }
     } catch (error) {
       setResponseMessage('An error occurred. Please try again later.');
+    } finally {
+      setIsSubmitting(false);
     }
   };
 
@@ -112,9 +134,10 @@ const ContactForm = () => {
         </Form.Group>
 
         <div style={{ textAlign: 'center' }}>
-        <Button
+          <Button
             variant="warning"
             type="submit"
+            disabled={isSubmitting}
             style={{
               backgroundColor: '#ff7823',
               borderColor: '#ff7823',
@@ -128,12 +151,15 @@ const ContactForm = () => {
               minWidth: '100px'
             }}
           >
-              Send Message
-            </Button>
-</div>
+            {isSubmitting ? 'Sending...' : 'Send Message'}
+          </Button>
+        </div>
       </Form>
-      {responseMessage && <p className="mt-3 text-center" style={{ color: '#ff7823', fontSize: '0.85rem', fontWeight:'bold' }}>
-      {responseMessage}</p>}
+      {responseMessage && (
+        <p className="mt-3 text-center" style={{ color: '#ff7823', fontSize: '0.85rem', fontWeight: 'bold' }}>
+          {responseMessage}
+        </p>
+      )}
     </Container>
   );
 };
