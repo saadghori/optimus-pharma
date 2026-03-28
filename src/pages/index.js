@@ -50,10 +50,9 @@ const Home = () => {
         <title>Optimus Laboratories - Your Trusted Partner in Ophthalmic Medicine</title>
       </Head>
 
-      {/* Hero Section - Priority set to true for fastest load */}
+      {/* Hero Section - imageSrc removed to stop poster image from loading */}
       <Hero
         videoSrc="/OptimusHomepageVid.mp4" 
-        imageSrc="/DJI_0157-2.jpg"
         heading="The gift of health"
         text={
           <>
